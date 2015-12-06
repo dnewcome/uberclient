@@ -1,0 +1,913 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataSet xmlns="http://www.ubernote.com/">
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="notes">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Note_ID" type="xs:string" minOccurs="0" />
+                <xs:element name="Note_Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Source_Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="Body" type="xs:string" minOccurs="0" />
+                <xs:element name="Trash" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Star" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Public_Flag" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Hidden" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Share_ID" type="xs:string" minOccurs="0" />
+                <xs:element name="Share_Level" type="xs:string" minOccurs="0" />
+                <xs:element name="Share_Owner" type="xs:string" minOccurs="0" />
+                <xs:element name="Create_Dt" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Update_Dt" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Update_User" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="note_categories">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Note_ID" type="xs:string" minOccurs="0" />
+                <xs:element name="Category_ID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Source">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Note_ID" type="xs:string" minOccurs="0" />
+                <xs:element name="Category_ID" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ShareBy">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Note_ID" type="xs:string" minOccurs="0" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Category_ID" type="xs:string" minOccurs="0" />
+                <xs:element name="Email_Address" type="xs:string" minOccurs="0" />
+                <xs:element name="Share_Level" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ShareWith">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Note_ID" type="xs:string" minOccurs="0" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Category_ID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ShareOthers">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Note_ID" type="xs:string" minOccurs="0" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Category_ID" type="xs:string" minOccurs="0" />
+                <xs:element name="Email_Address" type="xs:string" minOccurs="0" />
+                <xs:element name="Share_Level" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Attachments">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Note_ID" type="xs:string" minOccurs="0" />
+                <xs:element name="Category_ID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Extension" type="xs:string" minOccurs="0" />
+                <xs:element name="Byte_Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Create_Dt" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Update_Dt" type="xs:dateTime" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+    <NewDataSet xmlns="">
+      <notes diffgr:id="notes1" msdata:rowOrder="0">
+        <Note_ID>C6C91CE4-FAA7-41DE-8DA7-1E5C71182DBD</Note_ID>
+        <Note_Type>Text</Note_Type>
+        <Source_Type>Clip</Source_Type>
+        <Title>Guacamole Tradicional Recipe Details | Recipe database | washingtonpost.com</Title>
+        <Body>&lt;p&gt;&lt;a href="http://projects.washingtonpost.com/recipes/2008/01/30/guacamole-tradicional/"&gt;http://projects.washingtonpost.com/recipes/2008/01/30/guacamole-tradicional/&lt;/a&gt;&lt;/p&gt;&lt;h1&gt;uacamole Tradicional&lt;/h1&gt;
+            &lt;div id="submitted"&gt;
+                
+                The Washington Post, January 30, 2008
+            &lt;/div&gt;
+    
+    &lt;div id="bulletSummary"&gt;
+    &lt;ul&gt;
+&lt;!-- display cuisine type --&gt;
+        &lt;li&gt;&lt;b&gt;Cuisine:&lt;/b&gt; Mexican&lt;/li&gt;
+&lt;!-- cycles through possible courses --&gt;
+        
+            
+                &lt;li&gt;&lt;b&gt;Course:&lt;/b&gt; Appetizer&lt;/li&gt;
+            
+        
+&lt;!-- cycles through features and subfeatures if there are any --&gt;
+
+        
+            &lt;li&gt;&lt;b&gt;Features:&lt;/b&gt;
+            
+                Fast, 
+
+
+            
+                Meatless
+
+
+            &lt;/li&gt;
+            
+        
+    &lt;/ul&gt;
+    &lt;/div&gt;
+
+&lt;!-- Summary Section --&gt;
+    &lt;div class="r_section"&gt;
+        
+        &lt;h2&gt;Summary:&lt;/h2&gt;
+            &lt;p&gt;&lt;/p&gt;&lt;p&gt;This stripped-down guacamole contains no lime juice, which means that there's more pressure to eat it before it starts to brown. In Diana Kennedy's landmark 1972 book, "The Cuisines of Mexico," she calls for it to be made -- and served -- in a traditional molcajete. In modern kitchens, the chili paste that serves as a base can be made in a food processor, but the rest should be mashed and mixed by hand. Kennedy addressed the idea of variations, suggesting making it with tomatillos or leaving out the tomatoes: "Practically anything goes, but within certain limits, which does not include the unnecessary additions that I see in most pedestrian cookbooks."&lt;/p&gt;
+
+&lt;p&gt;Serve with corn tortilla chips.&lt;/p&gt;
+        
+        &lt;p&gt;8 servings (makes about 4 cups)&lt;/p&gt;
+    &lt;/div&gt;
+
+&lt;!-- Ingredients Section --&gt;
+ &lt;div id="r_section"&gt;
+    &lt;h2&gt;Ingredients:&lt;/h2&gt;
+    
+        
+            
+            &lt;ul&gt;
+                
+                    &lt;li&gt;1/2 small white onion, finely chopped (about 1/2 cup)&lt;/li&gt;
+                
+                    &lt;li&gt;2 small serrano chili peppers, stemmed, seeded and chopped&lt;/li&gt;
+                
+                    &lt;li&gt;1/2 cup finely chopped cilantro leaves&lt;/li&gt;
+                
+                    &lt;li&gt;1 teaspoon kosher salt, plus more to taste&lt;/li&gt;
+                
+                    &lt;li&gt;5 medium Hass avocados&lt;/li&gt;
+                
+                    &lt;li&gt;2 medium ripe tomatoes, seeded and chopped (not peeled)&lt;/li&gt;
+                
+            &lt;/ul&gt;
+        
+&lt;/div&gt;
+&lt;div style="clear: both;"&gt;&lt;/div&gt;
+&lt;div id="r_section"&gt;
+    &lt;h2&gt;Directions:&lt;/h2&gt;
+    &lt;p&gt;&lt;/p&gt;&lt;p&gt;Combine half of the chopped onion, the chili peppers, half of the cilantro and the salt in the bowl of a food processor; pulse for a few minutes until a coarse paste has formed. &lt;br&gt;Transfer to a medium mixing bowl. Cut the avocados in half, discard the pits and scoop the flesh into the bowl. Use a wooden spoon to mash the avocado with the paste. Add the tomato and the remaining chopped onion and cilantro; mix well and adjust seasoning to taste. Serve immediately.&lt;/p&gt;
+    
+&lt;/div&gt;
+    
+&lt;div id="r_section"&gt;
+    &lt;h2&gt;Recipe Source:&lt;/h2&gt;
+    &lt;p&gt;Adapted from Kennedy's "The Cuisines of Mexico" (Harper &amp;amp; Row, 1972).&lt;/p&gt;&lt;/div&gt;</Body>
+        <Trash>false</Trash>
+        <Star>false</Star>
+        <Public_Flag>false</Public_Flag>
+        <Hidden>false</Hidden>
+        <Share_ID>None</Share_ID>
+        <Share_Level>None</Share_Level>
+        <Share_Owner>None</Share_Owner>
+        <Create_Dt>2008-12-31T12:53:59.773-05:00</Create_Dt>
+        <Update_Dt>2008-12-31T12:53:59.773-05:00</Update_Dt>
+        <Update_User>susanmorey</Update_User>
+      </notes>
+      <notes diffgr:id="notes2" msdata:rowOrder="1">
+        <Note_ID>9F7712A3-0BC5-42FB-99DF-FC9F760EE5D5</Note_ID>
+        <Note_Type>Text</Note_Type>
+        <Source_Type>Clip</Source_Type>
+        <Title>Tony Rosenfeld's Basic Pizza for the Grill Recipe Details | Recipe database | washingtonpost.com</Title>
+        <Body>&lt;p&gt;&lt;a href="http://projects.washingtonpost.com/recipes/2008/05/28/tony-rosenfelds-basic-pizza-dough/"&gt;http://projects.washingtonpost.com/recipes/2008/05/28/tony-rosenfelds-basic-pizza-dough/&lt;/a&gt;&lt;/p&gt;&lt;h1&gt;Tony Rosenfeld's Basic Pizza for the Grill&lt;/h1&gt;
+            &lt;div id="submitted"&gt;
+                
+                The Washington Post, May 28, 2008
+            &lt;/div&gt;
+    
+    &lt;div id="bulletSummary"&gt;
+    &lt;ul&gt;
+&lt;!-- display cuisine type --&gt;
+        
+&lt;!-- cycles through possible courses --&gt;
+        
+            
+                &lt;li&gt;&lt;b&gt;Course:&lt;/b&gt; Main Course&lt;/li&gt;
+            
+        
+&lt;!-- cycles through features and subfeatures if there are any --&gt;
+
+        
+            &lt;li&gt;&lt;b&gt;Features:&lt;/b&gt;
+            
+                Kid-Friendly, 
+
+
+            
+                Grilling
+
+
+            &lt;/li&gt;
+            
+        
+    &lt;/ul&gt;
+    &lt;/div&gt;
+
+&lt;!-- Summary Section --&gt;
+    &lt;div class="r_section"&gt;
+        
+        &lt;h2&gt;Summary:&lt;/h2&gt;
+            &lt;p&gt;&lt;/p&gt;&lt;p&gt;Of course you can use a store-bought dough for these grilled pizzas, though making one yourself doesn’t involve much work; the kneading is almost meditative, if not thoroughly satisfying.&lt;/p&gt;
+
+&lt;p&gt;So if you have the time, give this dough a try. Although Tony Rosenfeld prefers working with wet doughs (which are quite sticky and yield a soft, tender texture), this one is a little tighter. He finds it is easy to work with and holds together nicely when transferred to and from the grill. The dough can be wrapped in plastic wrap, placed in heavy-duty resealable plastic food storage bag and frozen for up to 1 month; defrost overnight in the refrigerator.&lt;/p&gt;
+
+&lt;p&gt;See the &lt;a href="http://www.washingtonpost.com/wp-dyn/content/article/2008/05/27/AR2008052700845.html"&gt;separate sidebar&lt;/a&gt; for topping suggestions.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+        
+        &lt;p&gt;Makes four 10- to 12-inch pizza crusts&lt;/p&gt;
+    &lt;/div&gt;
+
+&lt;!-- Ingredients Section --&gt;
+ &lt;div id="r_section"&gt;
+    &lt;h2&gt;Ingredients:&lt;/h2&gt;
+    
+        
+            
+            &lt;ul&gt;
+                
+                    &lt;li&gt;1 1/4 cups warm water (between 100 and 110 degrees), plus more as needed&lt;/li&gt;
+                
+                    &lt;li&gt;2 1/4 teaspoons (1 small packet) active dry yeast&lt;/li&gt;
+                
+                    &lt;li&gt;1/2 teaspoon sugar&lt;/li&gt;
+                
+                    &lt;li&gt;3 1/2 cups flour, plus more as needed and for the work surface&lt;/li&gt;
+                
+                    &lt;li&gt;10 tablespoons olive oil, plus more for the bowl&lt;/li&gt;
+                
+                    &lt;li&gt;2 teaspoons kosher salt, plus more as needed&lt;/li&gt;
+                
+                    &lt;li&gt; Freshly ground black pepper&lt;/li&gt;
+                
+                    &lt;li&gt; Toppings (see related story)&lt;/li&gt;
+                
+            &lt;/ul&gt;
+        
+&lt;/div&gt;
+&lt;div style="clear: both;"&gt;&lt;/div&gt;
+&lt;div id="r_section"&gt;
+    &lt;h2&gt;Directions:&lt;/h2&gt;
+    &lt;p&gt;&lt;/p&gt;&lt;p&gt;Combine the water, yeast and sugar in a small bowl, stirring to mix well; let sit for 10 minutes to allow the top to foam and become frothy (indicating that the yeast is active). If it does not do that, discard and start again with more water, yeast and sugar.&lt;/p&gt;
+
+&lt;p&gt;Lightly flour a work surface; lightly grease a mixing bowl and a rimmed baking sheet with a little olive oil.&lt;/p&gt;
+
+&lt;p&gt;Combine the flour, salt and 2 tablespoons of the oil in the bowl of a stand mixer fitted with the dough hook. Beat on low speed for 1 minute until well incorporated, then add the water-yeast mixture in a slow, steady stream. Beat for about 5 minutes, stopping to scrape down the sides of the bowl as necessary, until a dough forms and pulls cleanly from the sides of the bowl. Add a few tablespoons of water or flour if the dough is too dry or wet. Transfer the dough to the prepared work surface and knead for about 5 minutes, adding a little flour if it starts to stick, so the dough becomes smooth and elastic.&lt;/p&gt;
+
+&lt;p&gt;Transfer to the oiled bowl, cover with a clean, dry dish towel and let sit for 1 to 2 hours at room temperature, until the mixture almost doubles in size. Form the dough into 4 equal-size balls and place on the prepared baking sheet. (Alternatively, the dough may be wrapped tightly in plastic wrap and refrigerated for up to 2 days or frozen for up to 1 month.)&lt;/p&gt;
+
+&lt;p&gt;To roll out the dough balls, lightly flour a work surface. Line a large baking sheet with parchment paper, and have ready additional large sheets of the paper for stacking the rounds of dough.&lt;/p&gt;
+
+&lt;p&gt;Shape or roll one of the balls into a thin round between 10 and 12 inches in diameter. Brush the top side with 1 tablespoon of olive oil and flip the oiled side over onto the lined baking sheet. Brush the new top side of the dough with 1 tablespoon of the oil and cover with a piece of parchment paper. Repeat with the remaining 3 doughs and the oil. They may be held at room temperature for about 1 hour in this manner (or refrigerate, tightly covered, for up to 3 hours. If the dough has been refrigerated, let it sit at room temperature for 30 minutes to 1 hour, so it will be easier to stretch).&lt;/p&gt;
+
+&lt;p&gt;When ready to grill, build a two-zone fire. Heat the back 2 burners on a gas grill on HIGH and the front burners on LOW, or light a large charcoal fire and push most of the coals to one side of the grill, leaving a  sparse layer of coals on the other side. When it has reached the right temperature, the hot zone of the fire should be so hot that you can hold your hand a couple of inches above the grill for only about 3 seconds (about 500 degrees, if using a surface thermometer). Clean the grill grates well and oil them lightly with a wad of paper towels.&lt;/p&gt;
+
+&lt;p&gt;Using both hands to hold the top of one of the dough rounds (as if your hands were at 10 and 2 on a steering wheel), gently lay the bottom part of the hanging dough on the far side of the hot zone and stretch the top toward you to the other side. Cook, without touching, for 1 minute, so the dough bubbles and starts to get good grill marks. Rotate 90 degrees and cook for 1 or 2 minutes, or until the dough is uniformly browned and crisp but has not burned.&lt;/p&gt;
+
+&lt;p&gt;Pull the dough to the cooler zone of the charcoal fire or to the front of the gas grill and reduce the heat on the middle zone of the gas grill to medium-low. Flip the dough over so the seared side faces up. Sprinkle toppings evenly over the pizza (remember, less is more; see related sidebar for topping suggestions).&lt;/p&gt;
+
+&lt;p&gt;Once the toppings are in place, cover the grill (with the vents open on a charcoal grill lid). Cook for 3 to 7 minutes, checking every minute or so to rotate the pie 90 degrees so it cooks evenly, until any cheese toppings melt. Transfer to a large cutting board to slice. Top and grill the remaining doughs in the same manner. Serve hot.&lt;/p&gt;&lt;/div&gt;</Body>
+        <Trash>false</Trash>
+        <Star>false</Star>
+        <Public_Flag>false</Public_Flag>
+        <Hidden>false</Hidden>
+        <Share_ID>None</Share_ID>
+        <Share_Level>None</Share_Level>
+        <Share_Owner>None</Share_Owner>
+        <Create_Dt>2008-12-31T12:52:04.337-05:00</Create_Dt>
+        <Update_Dt>2008-12-31T12:52:04.337-05:00</Update_Dt>
+        <Update_User>susanmorey</Update_User>
+      </notes>
+      <notes diffgr:id="notes3" msdata:rowOrder="2">
+        <Note_ID>6FF8FA10-3941-485F-91F9-2531AAFCC70F</Note_ID>
+        <Note_Type>Text</Note_Type>
+        <Source_Type>Clip</Source_Type>
+        <Title>Butter-Braised Radishes Recipe Details | Recipe database | washingtonpost.com</Title>
+        <Body>&lt;p&gt;&lt;a href="http://projects.washingtonpost.com/recipes/2008/06/04/butter-braised-radishes/"&gt;http://projects.washingtonpost.com/recipes/2008/06/04/butter-braised-radishes/&lt;/a&gt;&lt;/p&gt;&lt;div id="leftcol"&gt;&lt;h1&gt;Butter-Braised Radishes&lt;/h1&gt;
+            &lt;div id="submitted"&gt;
+                
+                The Washington Post, June 4, 2008
+            &lt;/div&gt;
+    
+    &lt;div id="bulletSummary"&gt;
+    &lt;ul&gt;
+&lt;!-- display cuisine type --&gt;
+        
+&lt;!-- cycles through possible courses --&gt;
+        
+            
+                &lt;li&gt;&lt;b&gt;Course:&lt;/b&gt; Side Dish&lt;/li&gt;
+            
+        
+&lt;!-- cycles through features and subfeatures if there are any --&gt;
+
+        
+            &lt;li&gt;&lt;b&gt;Features:&lt;/b&gt;
+            
+                Fast, 
+
+
+            
+                Healthy, 
+
+
+            
+                Meatless
+
+
+            &lt;/li&gt;
+            
+        
+    &lt;/ul&gt;
+    &lt;/div&gt;
+
+&lt;!-- Summary Section --&gt;
+    &lt;div class="r_section"&gt;
+        
+        &lt;h2&gt;Summary:&lt;/h2&gt;
+            &lt;p&gt;&lt;/p&gt;&lt;p&gt;People who are familiar with radishes as a garnish or salad bar option may be surprised when they try this dish, in which "quick braising" gives the cooked radish a turniplike taste and texture plus a lovely, rosy hue.&lt;/p&gt;
+
+&lt;p&gt;Serve with roast duck or grilled pork.&lt;/p&gt;
+
+&lt;p&gt;What's the difference between a spring onion and a scallion? Although they sprout similar green tops, spring onions have larger bulbs (one to two inches in diameter).&lt;/p&gt;
+        
+        &lt;p&gt;4 servings&lt;/p&gt;
+    &lt;/div&gt;
+
+&lt;!-- Ingredients Section --&gt;
+ &lt;div id="r_section"&gt;
+    &lt;h2&gt;Ingredients:&lt;/h2&gt;
+    
+        
+            
+            &lt;ul&gt;
+                
+                    &lt;li&gt;2 tablespoons unsalted butter&lt;/li&gt;
+                
+                    &lt;li&gt;1 3- to 4-ounce spring onion, cut into 1/4-inch dice, tough dark-green top removed (may substitute sweet onion)&lt;/li&gt;
+                
+                    &lt;li&gt;1 pound (two 1/2-pound bunches) radishes, cleaned, green tops removed, stem ends trimmed; small ones left whole, medium ones cut in half, large ones cut into quarters&lt;/li&gt;
+                
+                    &lt;li&gt; Salt&lt;/li&gt;
+                
+                    &lt;li&gt; Freshly ground black pepper&lt;/li&gt;
+                
+                    &lt;li&gt; Pinch sugar&lt;/li&gt;
+                
+                    &lt;li&gt;1/2 cup water&lt;/li&gt;
+                
+            &lt;/ul&gt;
+        
+&lt;/div&gt;
+&lt;div style="clear: both;"&gt;&lt;/div&gt;
+&lt;div id="r_section"&gt;
+    &lt;h2&gt;Directions:&lt;/h2&gt;
+    &lt;p&gt;&lt;/p&gt;&lt;p&gt;In a pan large enough to hold the radishes without crowding, melt the butter over medium-high heat; allow it to begin to brown but not burn. Add the diced onion and reduce the heat to medium. Cook, stirring, for about 3 minutes, until the onion softens.&lt;/p&gt;
+
+&lt;p&gt;Add the radishes, salt and pepper to taste, the sugar and the water, stirring to combine. Increase the heat to high and bring just to a boil, then cover and reduce the heat to low. Cook for about 20 minutes, until tender.&lt;/p&gt;
+
+&lt;p&gt;Uncover, increase the heat to high and bring back to a boil; cook for about 4 minutes, until almost all the liquid has evaporated. Serve hot or warm.&lt;/p&gt;
+    
+&lt;/div&gt;
+    
+&lt;div id="r_section"&gt;
+    &lt;h2&gt;Recipe Source:&lt;/h2&gt;
+    &lt;p&gt;From  In Season columnist Stephanie Witt Sedgwick.&lt;/p&gt;
+&lt;/div&gt;
+    
+    
+        &lt;div style="color: rgb(102, 102, 102); font-style: italic;"&gt;Tested by Stephanie Witt Sedgwick for The Washington Post.&lt;br&gt; E-mail the &lt;a href="http://projects.washingtonpost.com/recipes/2008/06/04/butter-braised-radishes/mailto:food@washpost.com?Subject=About%20the%20Butter-Braised%20Radishes%20Recipe"&gt;Food Section&lt;/a&gt; with recipe questions.&lt;/div&gt;
+    
+
+    &lt;!-- REVIEWS --&gt;
+    &lt;!-- 
+    &lt;div id="r_section"&gt; 
+        &lt;link href="http://media.washingtonpost.com/wp-srv/css/article.css" rel="stylesheet" media="all" /&gt;
+        &lt;script type="text/javascript" language="javascript"&gt;
+            var comments_id = "http://projects.washingtonpost.com/recipes/2008/06/04/butter-braised-radishes/" ;
+
+            function getDisplayUserName() {
+    	        var output = 'Your MyPost ID' ;
+    	        // check to the see if the user is signed in
+    	        if (document.cookie.indexOf("wpniuser") != -1) {
+    		        var start = (document.cookie.indexOf("wpniuser") + 9) ;
+    		        var end = (document.cookie.indexOf(";",start)) == -1 ? document.cookie.length : document.cookie.indexOf(";",start) ;
+    		        cookieuser = document.cookie.substring(start,end) ;
+    		        // show their username and registration links
+    		        if ( cookieuser.indexOf("@") != -1)
+    			        cookieuser = cookieuser.substring(0,cookieuser.indexOf("@")) ;
+    		        if ( cookieuser )
+    			        output += (', '+cookieuser+',') ;
+    	        }
+    	        output += ' will be displayed with your comment.' ;
+	            return output ;
+            }
+            if ( typeof comments_id != 'undefined' ) {
+    	        document.write("&lt;style&gt;#ArticleCommentsWrapper {display:block;}&lt;/style&gt;"); 
+            } else { 
+                document.write(''); 
+            } 
+        &lt;/script&gt;
+        &lt;div id="ArticleCommentsWrapper" style="width:454px; padding-top:15px; float:left"&gt;
+            &lt;div class="comments"&gt;
+                &lt;div class="hdr"&gt;
+                    &lt;div id="review-data-pluck"&gt; 
+                        &lt;p style="width:400px;"&gt; &lt;script&gt;document.write( getDisplayUserName() )&lt;/script&gt;&lt;/p&gt; 
+                        &lt;script language="JavaScript"&gt;gSiteLife.Review("ExternalResource", comments_id);&lt;/script&gt; 
+                    &lt;/div&gt; 
+                    &lt;link type="text/css" href="http://projects.washingtonpost.com/recipes/2008/06/04/butter-braised-radishes/commentslinks.css" rel="stylesheet" media="all"/&gt; 
+                    &lt;div class="clearboth"&gt;&lt;/div&gt; 
+                    &lt;p&gt;
+                        Comments that include profanity or personal attacks or other inappropriate comments or material will 
+                        be removed from the site. Additionally, entries that are unsigned or contain "signatures" by someone 
+                        other than the actual author will be removed. Finally, we will take steps to block users who violate 
+                        any of our posting standards, terms of use or privacy policies or any other policies governing this 
+                        site. Please review the &lt;a href="http://www.washingtonpost.com/wp-srv/liveonline/delphi/delphirules.htm"&gt;full rules&lt;/a&gt; 
+                        governing commentaries and discussions. You are fully responsible for the content that you post.
+                    &lt;/p&gt; 
+                    &lt;div class="clearboth"&gt;&lt;/div&gt; 
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    --&gt;
+    &lt;!-- END REVIEWS --&gt;
+
+&lt;/div&gt;
+&lt;div id="rightcol"&gt;
+        
+        &lt;div id="recipePhoto"&gt;
+            &lt;img src="http://media.washingtonpost.com/wp-dyn/content/photo/2008/06/02/PH2008060202232.jpg" border="0"&gt;&lt;br&gt;
+            &lt;span id="credit"&gt;(Leah L. Jones for The Washington Post)&lt;/span&gt;
+        &lt;/div&gt;
+    
+    &lt;div id="r_sidebar"&gt;
+    &lt;!-- Tools --&gt;
+        &lt;ul&gt;
+          &lt;li class="print"&gt;&lt;a href="http://projects.washingtonpost.com/recipes/2008/06/04/butter-braised-radishes//recipes/2008/06/04/butter-braised-radishes/printer/"&gt;Print This Recipe&lt;/a&gt; &lt;!--| &lt;a href="http://projects.washingtonpost.com/recipes/2008/06/04/butter-braised-radishes/#"&gt;3x5 card&lt;/a&gt; | &lt;a href="http://projects.washingtonpost.com/recipes/2008/06/04/butter-braised-radishes/#"&gt;4x6 card&lt;/a&gt;--&gt;&lt;/li&gt;
+          &lt;li class="email"&gt;&lt;a href="http://projects.washingtonpost.com/recipes/2008/06/04/butter-braised-radishes//recipes/2008/06/04/butter-braised-radishes/email/"&gt;E-mail This Recipe&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;!--ul&gt;
+          &lt;li class="cart"&gt;&lt;a href="http://projects.washingtonpost.com/recipes/2008/06/04/butter-braised-radishes/#"&gt;Add ingredients to Grocery List&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul--&gt;
+     &lt;!-- end tools --&gt;
+            &lt;table id="nutritionals" width="214" cellpadding="0" cellspacing="0"&gt;&lt;tbody&gt;
+            &lt;tr&gt;&lt;th colspan="2" class="title"&gt;Nutrition Facts&lt;/th&gt;&lt;/tr&gt;
+            
+                &lt;tr&gt;&lt;td colspan="2"&gt;Information per serving&lt;/td&gt;&lt;/tr&gt;
+                &lt;tr&gt;&lt;td colspan="2"&gt;Calories:  76&lt;/td&gt;&lt;/tr&gt;
+                &lt;tr&gt;&lt;td class="dailyvalues" colspan="2"&gt; % Daily Values*&lt;/td&gt;&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;&lt;b&gt;Total Fat:&lt;/b&gt; 6g&lt;/td&gt;
+                &lt;td class="pdv"&gt;9&lt;/td&gt;&lt;/tr&gt;
+                &lt;tr&gt;&lt;td class="indent"&gt;Saturated Fat: 4g&lt;/td&gt;
+                &lt;td class="pdv"&gt;20&lt;/td&gt;&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;&lt;b&gt;Cholesterol:&lt;/b&gt; 15mg&lt;/td&gt;
+                &lt;td class="pdv"&gt;5&lt;/td&gt;&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;&lt;b&gt;Sodium:&lt;/b&gt; 118mg&lt;/td&gt;&lt;td class="pdv"&gt;5&lt;/td&gt;&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;&lt;b&gt;Total Carbohydrates:&lt;/b&gt; 6g&lt;/td&gt;
+                &lt;td class="pdv"&gt;2&lt;/td&gt;&lt;/tr&gt;
+                &lt;tr&gt;&lt;td class="indent"&gt;Dietary Fiber: 2g&lt;/td&gt;
+                &lt;td class="pdv"&gt;8
+                &lt;/td&gt;&lt;/tr&gt;
+                &lt;tr&gt;&lt;td colspan="2"&gt;&lt;b&gt;Protein:&lt;/b&gt; 1g&lt;/td&gt;&lt;/tr&gt;
+            &lt;/tbody&gt;&lt;/table&gt;
+            
+
+        &lt;table id="dailyvalues" width="220" cellpadding="0" cellspacing="0"&gt;
+        &lt;tbody&gt;&lt;tr&gt;&lt;td colspan="3" class="disclaimer"&gt;*Percent Daily Value based on a 2,000 calorie diet. Your daily values may be higher or lower depending on your calorie needs.&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;&lt;b&gt;Total Fat:&lt;/b&gt; &lt;/td&gt;&lt;td&gt;Less than&lt;/td&gt;&lt;td&gt;65g&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td style="padding-left: 7px;"&gt;Saturated Fat: &lt;/td&gt;&lt;td&gt;Less than&lt;/td&gt;&lt;td&gt;20g&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;&lt;b&gt;Cholesterol:&lt;/b&gt; &lt;/td&gt;&lt;td&gt;Less than&lt;/td&gt;&lt;td&gt;300mg&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;&lt;b&gt;Sodium:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Less than&lt;/td&gt;&lt;td&gt;2,400mg&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td colspan="2"&gt;&lt;b&gt;Total Carbohydrates:&lt;/b&gt; &lt;/td&gt;&lt;td&gt;300g&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td colspan="2" style="padding-left: 7px;"&gt;Dietary Fiber: &lt;/td&gt;&lt;td&gt;25g&lt;/td&gt;&lt;/tr&gt;
+
+        &lt;/tbody&gt;&lt;/table&gt;
+        &lt;div id="bottom"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+
+&lt;!-- search box --&gt;
+
+        
+
+&lt;div id="recipeSearch"&gt;&lt;h3&gt;New Search&lt;/h3&gt;
+  &lt;form action="/recipes/searchaction/" name="recipesearch" method="get"&gt;
+    &lt;table id="NewRecipeSearch" width="200" border="0" cellpadding="0" cellspacing="0"&gt;
+
+            &lt;tbody&gt;&lt;tr&gt;
+              &lt;td colspan="2"&gt;&lt;h6&gt;Keyword:&lt;/h6&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td colspan="2" class="formfield"&gt;
+              &lt;input name="keywords" class="selected" style="width: 190px;" value="e.g., chicken, basil, Skillet Lasagna" onfocus="clearRecipeSearch()" onclick="this.value = ''" type="text"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/form&gt;&lt;/div&gt;&lt;/div&gt;</Body>
+        <Trash>false</Trash>
+        <Star>false</Star>
+        <Public_Flag>false</Public_Flag>
+        <Hidden>false</Hidden>
+        <Share_ID>None</Share_ID>
+        <Share_Level>None</Share_Level>
+        <Share_Owner>None</Share_Owner>
+        <Create_Dt>2008-12-31T12:51:15.54-05:00</Create_Dt>
+        <Update_Dt>2008-12-31T12:51:15.54-05:00</Update_Dt>
+        <Update_User>susanmorey</Update_User>
+      </notes>
+      <notes diffgr:id="notes4" msdata:rowOrder="3">
+        <Note_ID>50F1E2CB-A803-4EBB-9E3C-C191351B9A08</Note_ID>
+        <Note_Type>Text</Note_Type>
+        <Source_Type>Clip</Source_Type>
+        <Title>Mushroom Lasagna Bolognese Recipe Details | Recipe database | washingtonpost.com</Title>
+        <Body>&lt;p&gt;&lt;a href="http://projects.washingtonpost.com/recipes/2008/03/19/mushroom-lasagna-bolognese/"&gt;http://projects.washingtonpost.com/recipes/2008/03/19/mushroom-lasagna-bolognese/&lt;/a&gt;&lt;/p&gt;&lt;h1&gt;Mushroom Lasagna Bolognese&lt;/h1&gt;
+            &lt;div id="submitted"&gt;
+                
+                The Washington Post, March 19, 2008
+            &lt;/div&gt;
+    
+    &lt;div id="bulletSummary"&gt;
+    &lt;ul&gt;
+&lt;!-- display cuisine type --&gt;
+        
+&lt;!-- cycles through possible courses --&gt;
+        
+            
+                &lt;li&gt;&lt;b&gt;Course:&lt;/b&gt; Main Course&lt;/li&gt;
+            
+        
+&lt;!-- cycles through features and subfeatures if there are any --&gt;
+
+        
+            &lt;li&gt;&lt;b&gt;Features:&lt;/b&gt;
+            
+                Holiday (Easter), 
+
+
+            
+                Meatless
+
+
+            &lt;/li&gt;
+            
+        
+    &lt;/ul&gt;
+    &lt;/div&gt;
+
+&lt;!-- Summary Section --&gt;
+    &lt;div class="r_section"&gt;
+        
+        &lt;h2&gt;Summary:&lt;/h2&gt;
+            &lt;p&gt;&lt;/p&gt;&lt;p&gt;This beautifully rich lasagna should be made ahead for several reasons: The preparation takes several steps and several hours, and the no-boil noodles need a chance to absorb liquid before they are baked.&lt;/p&gt;
+
+&lt;p&gt;If the lasagna is baked in advance, cool it completely and then wrap well in plastic and aluminum foil  so the bechamel sauce will not dry out.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+        
+        &lt;p&gt;12 servings&lt;/p&gt;
+    &lt;/div&gt;
+
+&lt;!-- Ingredients Section --&gt;
+ &lt;div id="r_section"&gt;
+    &lt;h2&gt;Ingredients:&lt;/h2&gt;
+    
+        
+            
+                &lt;em&gt;For the mushroom filling&lt;/em&gt;
+            
+            &lt;ul&gt;
+                
+                    &lt;li&gt;1 1/2 ounces dried porcini mushrooms&lt;/li&gt;
+                
+                    &lt;li&gt;4 cups boiling water&lt;/li&gt;
+                
+                    &lt;li&gt;1/2 cup low-sodium soy sauce&lt;/li&gt;
+                
+                    &lt;li&gt;1/2 cup vegetarian or vegan Worcestershire sauce&lt;/li&gt;
+                
+                    &lt;li&gt;1 pound portobello mushrooms, stemmed and coarsely chopped (may use packaged caps or slices)&lt;/li&gt;
+                
+                    &lt;li&gt;1 pound shiitake mushrooms, coarsely chopped&lt;/li&gt;
+                
+                    &lt;li&gt;1 pound sliced cremini mushrooms&lt;/li&gt;
+                
+                    &lt;li&gt;4 tablespoons (1/2 stick) unsalted butter&lt;/li&gt;
+                
+                    &lt;li&gt;1/4 cup extra-virgin olive oil&lt;/li&gt;
+                
+                    &lt;li&gt;2 large carrots, peeled and cut into 1/2-inch slices&lt;/li&gt;
+                
+                    &lt;li&gt;1 large onion, peeled and cut into quarters&lt;/li&gt;
+                
+                    &lt;li&gt;4 ribs celery, cut into 1-inch pieces&lt;/li&gt;
+                
+                    &lt;li&gt;2 teaspoons salt&lt;/li&gt;
+                
+                    &lt;li&gt;1 teaspoon freshly ground black pepper&lt;/li&gt;
+                
+                    &lt;li&gt;3 tablespoons finely chopped garlic (3 to 4 medium cloves)&lt;/li&gt;
+                
+                    &lt;li&gt;2 6-ounce cans tomato paste&lt;/li&gt;
+                
+                    &lt;li&gt;2 cups whole or low-fat milk&lt;/li&gt;
+                
+                    &lt;li&gt;2 cups red wine, such as merlot or cabernet sauvignon&lt;/li&gt;
+                
+                    &lt;li&gt;1 28-ounce can diced tomatoes, with juice&lt;/li&gt;
+                
+                    &lt;li&gt; Several sprigs of herbs, such as thyme, oregano and bay leaf, tied with kitchen twine to form a bouquet garni (see TIP)&lt;/li&gt;
+                
+                    &lt;li&gt;2 tablespoons sugar&lt;/li&gt;
+                
+            &lt;/ul&gt;
+        
+            
+                &lt;em&gt;For the bechamel sauce&lt;/em&gt;
+            
+            &lt;ul&gt;
+                
+                    &lt;li&gt;4 tablespoons (1/2 stick) unsalted butter&lt;/li&gt;
+                
+                    &lt;li&gt;1/4 cup flour&lt;/li&gt;
+                
+                    &lt;li&gt;4 cups whole or low-fat milk (do not use nonfat)&lt;/li&gt;
+                
+                    &lt;li&gt;1 teaspoon salt&lt;/li&gt;
+                
+                    &lt;li&gt;1/2 teaspoon freshly ground black pepper&lt;/li&gt;
+                
+                    &lt;li&gt;1/4 teaspoon freshly grated nutmeg&lt;/li&gt;
+                
+                    &lt;li&gt;1/2 cup freshly grated Parmigiano-Reggiano cheese&lt;/li&gt;
+                
+            &lt;/ul&gt;
+        
+            
+                &lt;em&gt;For assembly&lt;/em&gt;
+            
+            &lt;ul&gt;
+                
+                    &lt;li&gt;2 9-ounce packages flat, no-boil lasagna sheets, such as Barilla brand&lt;/li&gt;
+                
+                    &lt;li&gt;1/2 cup freshly grated Parmigiano-Reggiano cheese&lt;/li&gt;
+                
+            &lt;/ul&gt;
+        
+&lt;/div&gt;
+&lt;div style="clear: both;"&gt;&lt;/div&gt;
+&lt;div id="r_section"&gt;
+    &lt;h2&gt;Directions:&lt;/h2&gt;
+    &lt;p&gt;&lt;/p&gt;&lt;p&gt;For the mushroom filling: Place the dried porcini mushrooms in a large bowl; add the boiling water and the soy and Worcestershire sauces. Set aside.&lt;/p&gt;
+
+&lt;p&gt;Combine the portobello and shiitake mushrooms in the bowl of a food processor. Pulse until finely chopped. Transfer to a separate large bowl and add the sliced cremini mushrooms.&lt;/p&gt;
+
+&lt;p&gt;Melt the butter with the olive oil over medium heat in a large saucepan.&lt;/p&gt;
+
+&lt;p&gt;Meanwhile, combine the carrots, onion and celery in the bowl of a food processor; pulse (about 20 times) until they are just finely chopped (but have not released a great amount of liquid), then add to the saucepan. Cook, stirring occasionally, for 20 minutes; do not let the vegetables brown. Season with salt and pepper and stir to mix well.&lt;/p&gt;
+
+&lt;p&gt;Add the chopped garlic and the portobello-shiitake-cremini mushroom mixture to the vegetables. Cook for 20 minutes, stirring occasionally, until the liquid is absorbed. Add the tomato paste and milk, stirring to mix well, and cook for 10 minutes or until the liquid is absorbed. Add the wine and cook for 10 minutes, stirring occasionally; it will be absorbed.&lt;/p&gt;
+
+&lt;p&gt;Use a slotted spoon to remove the reconstituted porcini mushrooms from their soaking liquid; reserve the liquid. Rinse the mushrooms to remove any grit, then coarsely chop them and add to the saucepan.&lt;/p&gt;
+
+&lt;p&gt;Strain the mushrooms' soaking liquid through a fine-mesh strainer or several layers of cheesecloth, then add it to the saucepan. Add the diced tomatoes and their juice, the bouquet garni and sugar. Reduce the heat to medium-low and cook, uncovered, for 2 to 3 hours, stirring occasionally, until the filling is a deep,  rich brown and very thick. Use strips of paper towel from time to time to skim off any fat that rises to the surface of the mixture. Discard the bouquet garni when the filling is done.&lt;/p&gt;
+
+&lt;p&gt;For the bechamel sauce (which can be done while the filling is cooking): Melt the butter in a large saucepan over medium heat. Add the flour and whisk it with the butter for several seconds to form a roux. Add the milk gradually, whisking constantly to ensure that no lumps form. Add the salt, pepper and nutmeg; cook for about 5 minutes, until the sauce thickens and can coat the back of a spoon. Remove from the heat and whisk in the Parmigiano-Reggiano cheese. Set aside.&lt;/p&gt;
+
+&lt;p&gt;To assemble: Use nonstick cooking oil spray to lightly grease the inside of a 9-by-13-inch lasagna pan, preferably one with deep sides.&lt;/p&gt;
+
+&lt;p&gt;Spread a thin layer of mushroom filling in the bottom of the pan. Arrange 4 lasagna sheets on the filling side by side; do not overlap. Spread a thin layer of filling over the noodles. Drizzle about  1/2 cup of the bechamel sauce over the mushroom filling. Build more layers in the same order — noodles, mushroom filling, bechamel sauce — to create as many as 7 layers. (All of the pasta can be used. There may be some mushroom filling left over; reserve for another use.) Spread the remaining sauce on top of the lasagna so that the mushroom filling is completely covered. Sprinkle the top with the Parmigiano-Reggiano cheese.&lt;/p&gt;
+
+&lt;p&gt;At this point, the lasagna can be wrapped well and refrigerated for 1 to 2 days, or wrapped well and frozen for up to 2 months (thaw completely before baking, or adjust baking times as needed).&lt;/p&gt;
+
+&lt;p&gt;When ready to bake, preheat the oven to 350 degrees. Bake the lasagna, unwrapped, for about 1 hour or until it is golden brown and bubbling. Let it rest for 10 minutes before serving.&lt;/p&gt;&lt;/div&gt;</Body>
+        <Trash>false</Trash>
+        <Star>false</Star>
+        <Public_Flag>false</Public_Flag>
+        <Hidden>false</Hidden>
+        <Share_ID>None</Share_ID>
+        <Share_Level>None</Share_Level>
+        <Share_Owner>None</Share_Owner>
+        <Create_Dt>2008-12-31T12:50:03.913-05:00</Create_Dt>
+        <Update_Dt>2008-12-31T12:50:03.913-05:00</Update_Dt>
+        <Update_User>susanmorey</Update_User>
+      </notes>
+      <notes diffgr:id="notes5" msdata:rowOrder="4">
+        <Note_ID>F52F53F1-CC4D-4C03-8190-46105F899A1B</Note_ID>
+        <Note_Type>Text</Note_Type>
+        <Source_Type>Clip</Source_Type>
+        <Title>The Year in Nibbles - Going Out Gurus - D.C. Entertainment Dispatches</Title>
+        <Body>&lt;p&gt;&lt;a href="http://voices.washingtonpost.com/goingoutgurus/2008/12/the_year_in_nibbles.html?hpid=gog"&gt;http://voices.washingtonpost.com/goingoutgurus/2008/12/the_year_in_nibbles.html?hpid=gog&lt;/a&gt;&lt;/p&gt;&lt;h2 style="color: rgb(0, 0, 0); font-family: Arial,Helvetica,sans-serif; font-style: normal; font-variant: normal; font-weight: bold; font-size: 18px; line-height: normal; font-size-adjust: none; font-stretch: normal; text-align: left; margin-top: 3px; margin-bottom: 5px; position: relative; background-color: transparent;"&gt;The Year in Nibbles&lt;/h2&gt; 
+	&lt;!-- begin blogger thumbs --&gt;
+
+ 
+
+&lt;!-- end blogger thumbs --&gt;
+
+	&lt;p&gt;&lt;em&gt;Joining the chorus of Best of 2008 lists around the blogosphere, we Gurus clink glasses to the brightest in Washington nightlife.&lt;/em&gt;&lt;/p&gt;
+
+&lt;div style="float: right; width: 228px; margin-left: 6px;"&gt;&lt;img src="http://media.washingtonpost.com/wp-dyn/content/photo/2008/10/30/PH2008103002765.jpg" width="228" border="0" height="152"&gt;&lt;br&gt;&lt;span class="blog_caption"&gt;Surfside brought a taste of Cali to Glover Park in 2008. (Olivia Boinet)&lt;/span&gt;&lt;/div&gt;
+
+&lt;p&gt;Trends overtook the Washington dining scene in 2008. Cupcakes crept in, burger joints abounded and even sweet-tart fro-yo puckered itself into the hearts of locals. Given this sudden influx, it's not surprising that many are represented on my year-end list. But if there's one overarching theme here, it's definitely cheap eats. Some of my most memorable meals were light on the wallet -- something I'm sure we'll all be looking for in 2009. &lt;/p&gt; &lt;a id="more"&gt;&lt;/a&gt; &lt;p&gt;&lt;strong&gt;Best New Cheap Eats&lt;/strong&gt;: &lt;a href="http://www.washingtonpost.com/gog/restaurants/surfside,1152443.html"&gt;&lt;strong&gt;Surfside&lt;/strong&gt;&lt;/a&gt;&lt;br&gt;
+David Scribner's fast-casual seafood shack tops my list of new places to dine in the last year. There's an honesty of plate in the generous portions here. Order the Martha's Vineyard quesadilla and taste every ingredient listed on the menu: smoky portobellos, crisp corn salsa, leafy spinach. Fresh guacamole is the simple mingling of chunks of avocado, shreds of cilantro and a squeeze of lime. The Cabo San Lucas steak taco platter was one of my early favorites and it remains a must-order. &lt;br&gt;
+&lt;strong&gt;Runners Up&lt;/strong&gt;: The fried side of the menu at Georgetown's &lt;a href="http://www.washingtonpost.com/gog/restaurants/tackle-box,1150205.html"&gt;Tackle Box&lt;/a&gt; has never steered me wrong, though the restaurant gets a demerit for prices that always seem too high no matter what you order. &lt;a href="http://www.washingtonpost.com/gog/restaurants/nandos-peri-peri,1152081.html"&gt;Nando's&lt;/a&gt; hasn't quite tickled my fancy the way it has for &lt;a href="http://www.washingtonpost.com/gog/go-out-lists/listing-nandos-peri-peri,1152081.html"&gt;others&lt;/a&gt;, but the chain's signature Peri-Peri sauce has become one of my favorite condiments at home. Besides, it's a great spot for a pre-Verizon Center meal -- if you can get there early enough to snag a table. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Best New Burger Joint&lt;/strong&gt;: &lt;a href="http://www.washingtonpost.com/gog/restaurants/rays-hell-burger,1152076.html"&gt;&lt;strong&gt;Ray's Hell-Burger&lt;/strong&gt;&lt;/a&gt;. &lt;br&gt;
+You can find things not to like about Michael Landrum's Arlington burger joint. At busy times, the long wait to order is followed by the search for the table, which, in my experience, usually just means eyeing almost-done diners, stalking their tables and pouncing the second they reach for their coats. But all that anxiousness melts away the second you're seated, fat, juicy burger in hand. I go for the Let's Get it On burger for its caramelized toppings, reference to Marvin. &lt;br&gt;
+&lt;strong&gt;Runners Up&lt;/strong&gt;: As I wrote in my &lt;a href="http://voices.washingtonpost.com/goingoutgurus/2008/08/best_in_the_burger_biz.html"&gt;burger biz roundup&lt;/a&gt; earlier this year, &lt;a href="http://www.washingtonpost.com/gog/restaurants/good-stuff-eatery,1151105.html"&gt;Spike's Good Stuff Eatery&lt;/a&gt; and &lt;a href="http://www.washingtonpost.com/ac2/wp-dyn?node=cityguide/profile&amp;amp;id=1151105&amp;amp;categories=Restaurants"&gt;Bethesda's BGR&lt;/a&gt; are up there on my list as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Best New Cupcake Bakery&lt;/strong&gt;: &lt;a href="http://www.washingtonpost.com/gog/restaurants/georgetown-cupcake,1147178.html"&gt;&lt;strong&gt;Georgetown Cupcake&lt;/strong&gt;&lt;/a&gt;.&lt;br&gt;
+I never wanted to become a cupcake girl, but after two months spent tasting the tiny treats for &lt;a href="http://www.washingtonpost.com/wp-srv/cityguide/features/2008/cupcake-wars/chart.html"&gt;Cupcake Wars&lt;/a&gt;, they wormed their way into my heart. Georgetown's frosting -- an almost-liquid sweet cream cheese concoction -- is what keeps me coming back. Chocolate ganache may have &lt;a href="http://www.washingtonpost.com/wp-dyn/content/article/2008/11/04/AR2008110401015.html"&gt;won the contest&lt;/a&gt;, but Red Velvet still has my heart. &lt;br&gt;
+&lt;strong&gt;Runner Up&lt;/strong&gt;: Buoyed by an easily accessible spot across from the Metro, &lt;a href="http://www.washingtonpost.com/gog/restaurants/hello-cupcake,1152444.html"&gt;Hello Cupcake&lt;/a&gt; also boasts an incredible banana-vanilla cupcake. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Best New Wine Bar&lt;/strong&gt;: &lt;a href="http://www.washingtonpost.com/gog/bars-clubs/cork-wine-bar,1147171.html"&gt;&lt;strong&gt;Cork Wine Bar&lt;/strong&gt;&lt;/a&gt;&lt;br&gt;
+As the word spread about wines by the glass and tempting small plates, this 14th Street spot became so popular, it was plagued by long waits and pushy throngs by the bar. But even still, I can't think of a better place I'd rather go for a dinner with my girlfriends. Preferably on the early side. On a weeknight. When it's raining. &lt;br&gt;
+&lt;strong&gt;Runner Up&lt;/strong&gt;: &lt;a href="http://www.washingtonpost.com/gog/bars-clubs/vinoteca,1144433.html"&gt;Vinoteca&lt;/a&gt; is a close second for me, especially during &lt;a href="http://www.washingtonpost.com/gog/bar-club-events/happy-hour-at-vinoteca,1149497.html"&gt;happy hour&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Best New Neighborhood Spot&lt;/strong&gt;: &lt;a href="http://www.washingtonpost.com/gog/restaurants/1905,1134892.html"&gt;&lt;strong&gt;1905&lt;/strong&gt;&lt;/a&gt;&lt;br&gt;
+I had mixed reactions to this cozy bistro in its early days, but later visits have changed my mind. Whether on a date, with a group, with some girlfriends on Thursday's Absinthe and Acid Jazz night -- I just like being there. Blessedly, most entrees are under $20.&lt;br&gt;
+&lt;strong&gt;Runner Up&lt;/strong&gt;: &lt;a href="http://www.washingtonpost.com/gog/restaurants/sticky-rice,1149585.html"&gt;Sticky Rice&lt;/a&gt;. I was reluctant to add Sticky Rice to this list -- since it's owned by some of the same people as 1905 -- but I couldn't resist mentioning the wacky sushi spot. Like 1905, it's got a great neighborhood feel and an affordable menu.  &lt;/p&gt;</Body>
+        <Trash>false</Trash>
+        <Star>false</Star>
+        <Public_Flag>false</Public_Flag>
+        <Hidden>false</Hidden>
+        <Share_ID>None</Share_ID>
+        <Share_Level>None</Share_Level>
+        <Share_Owner>None</Share_Owner>
+        <Create_Dt>2008-12-31T12:46:40.66-05:00</Create_Dt>
+        <Update_Dt>2008-12-31T12:46:40.66-05:00</Update_Dt>
+        <Update_User>susanmorey</Update_User>
+      </notes>
+      <notes diffgr:id="notes6" msdata:rowOrder="5">
+        <Note_ID>1F74034C-3DD8-489E-9AB4-601895F0D967</Note_ID>
+        <Note_Type>Text</Note_Type>
+        <Source_Type>Client</Source_Type>
+        <Title>running plan winter/spring 09</Title>
+        <Body />
+        <Trash>false</Trash>
+        <Star>false</Star>
+        <Public_Flag>false</Public_Flag>
+        <Hidden>false</Hidden>
+        <Share_ID>None</Share_ID>
+        <Share_Level>None</Share_Level>
+        <Share_Owner>None</Share_Owner>
+        <Create_Dt>2008-12-29T04:10:32.92-05:00</Create_Dt>
+        <Update_Dt>2008-12-29T04:10:46.577-05:00</Update_Dt>
+        <Update_User>susanmorey</Update_User>
+      </notes>
+      <notes diffgr:id="notes7" msdata:rowOrder="6">
+        <Note_ID>19CF6EDF-5DD2-447F-A87F-A724AB4D238F</Note_ID>
+        <Note_Type>Text</Note_Type>
+        <Source_Type>Clip</Source_Type>
+        <Title>Handmade Tree of Life Wall Hanging from Haiti || Fair Trade Handicrafts from Ten Thousand Villages</Title>
+        <Body>&lt;p&gt;&lt;a href="http://www.tenthousandvillages.com/catalog/product.detail.php?product_id=7005"&gt;http://www.tenthousandvillages.com/catalog/product.detail.php?product_id=7005&lt;/a&gt;&lt;/p&gt;</Body>
+        <Trash>false</Trash>
+        <Star>false</Star>
+        <Public_Flag>false</Public_Flag>
+        <Hidden>false</Hidden>
+        <Share_ID>None</Share_ID>
+        <Share_Level>None</Share_Level>
+        <Share_Owner>None</Share_Owner>
+        <Create_Dt>2008-12-28T21:14:49.087-05:00</Create_Dt>
+        <Update_Dt>2008-12-28T21:14:49.087-05:00</Update_Dt>
+        <Update_User>susanmorey</Update_User>
+      </notes>
+      <notes diffgr:id="notes8" msdata:rowOrder="7">
+        <Note_ID>AA7B9DAD-1C10-4689-AECE-2B036D25ADBC</Note_ID>
+        <Note_Type>Text</Note_Type>
+        <Source_Type>Clip</Source_Type>
+        <Title>Tahoe Coffee Table at World Market</Title>
+        <Body>&lt;p&gt;&lt;a href="http://www.worldmarket.com/lev/4/productId/7093/mybuyscid/2494043435/index.pro"&gt;http://www.worldmarket.com/lev/4/productId/7093/mybuyscid/2494043435/index.pro&lt;/a&gt;&lt;/p&gt;</Body>
+        <Trash>false</Trash>
+        <Star>false</Star>
+        <Public_Flag>false</Public_Flag>
+        <Hidden>false</Hidden>
+        <Share_ID>None</Share_ID>
+        <Share_Level>None</Share_Level>
+        <Share_Owner>None</Share_Owner>
+        <Create_Dt>2008-12-28T21:12:10.833-05:00</Create_Dt>
+        <Update_Dt>2008-12-28T21:12:10.833-05:00</Update_Dt>
+        <Update_User>susanmorey</Update_User>
+      </notes>
+      <notes diffgr:id="notes9" msdata:rowOrder="8">
+        <Note_ID>826C9952-2666-4EA0-8EE2-4299CC97016E</Note_ID>
+        <Note_Type>Text</Note_Type>
+        <Source_Type>Clip</Source_Type>
+        <Title>Concave Iron Leaf Panel at World Market</Title>
+        <Body>&lt;p&gt;&lt;a href="http://www.worldmarket.com/wall-art/Alternative-Wall-Decor/Concave-Iron-Leaf-Panel/lev/4/productId/8211/Ne/1100001/Ns/TOP_SELLER_INDEX%7C1%7C%7CCATEGORY_SEQ_3317%7C0/N/1100556/Nty/1/view/10000/perpage/0/index.pro"&gt;http://www.worldmarket.com/wall-art/Alternative-Wall-Decor/Concave-Iron-Leaf-Panel/lev/4/productId/8211/Ne/1100001/Ns/TOP_SELLER_INDEX|1||CATEGORY_SEQ_3317|0/N/1100556/Nty/1/view/10000/perpage/0/index.pro&lt;/a&gt;&lt;/p&gt;</Body>
+        <Trash>false</Trash>
+        <Star>false</Star>
+        <Public_Flag>false</Public_Flag>
+        <Hidden>false</Hidden>
+        <Share_ID>None</Share_ID>
+        <Share_Level>None</Share_Level>
+        <Share_Owner>None</Share_Owner>
+        <Create_Dt>2008-12-28T21:10:55.867-05:00</Create_Dt>
+        <Update_Dt>2008-12-28T21:10:55.867-05:00</Update_Dt>
+        <Update_User>susanmorey</Update_User>
+      </notes>
+      <notes diffgr:id="notes10" msdata:rowOrder="9">
+        <Note_ID>507DFC6C-02B4-488A-BBCD-BD00A3DC1FEA</Note_ID>
+        <Note_Type>Text</Note_Type>
+        <Source_Type>Clip</Source_Type>
+        <Title>Square Tree Of Life Wall Art at World Market</Title>
+        <Body>&lt;p&gt;&lt;a href="http://www.worldmarket.com/lev/4/productId/8806/mybuyscid/2494043435/index.pro"&gt;http://www.worldmarket.com/lev/4/productId/8806/mybuyscid/2494043435/index.pro&lt;/a&gt;&lt;/p&gt;</Body>
+        <Trash>false</Trash>
+        <Star>false</Star>
+        <Public_Flag>false</Public_Flag>
+        <Hidden>false</Hidden>
+        <Share_ID>None</Share_ID>
+        <Share_Level>None</Share_Level>
+        <Share_Owner>None</Share_Owner>
+        <Create_Dt>2008-12-28T21:10:29.693-05:00</Create_Dt>
+        <Update_Dt>2008-12-28T21:10:29.693-05:00</Update_Dt>
+        <Update_User>susanmorey</Update_User>
+      </notes>
+      <note_categories diffgr:id="note_categories1" msdata:rowOrder="0">
+        <Note_ID>507DFC6C-02B4-488A-BBCD-BD00A3DC1FEA</Note_ID>
+        <Category_ID>79b98cdd-4cff-4832-bda3-5bca71b9e741</Category_ID>
+      </note_categories>
+      <note_categories diffgr:id="note_categories2" msdata:rowOrder="1">
+        <Note_ID>826C9952-2666-4EA0-8EE2-4299CC97016E</Note_ID>
+        <Category_ID>79b98cdd-4cff-4832-bda3-5bca71b9e741</Category_ID>
+      </note_categories>
+      <note_categories diffgr:id="note_categories3" msdata:rowOrder="2">
+        <Note_ID>AA7B9DAD-1C10-4689-AECE-2B036D25ADBC</Note_ID>
+        <Category_ID>79b98cdd-4cff-4832-bda3-5bca71b9e741</Category_ID>
+      </note_categories>
+      <note_categories diffgr:id="note_categories4" msdata:rowOrder="3">
+        <Note_ID>19CF6EDF-5DD2-447F-A87F-A724AB4D238F</Note_ID>
+        <Category_ID>79b98cdd-4cff-4832-bda3-5bca71b9e741</Category_ID>
+      </note_categories>
+      <note_categories diffgr:id="note_categories5" msdata:rowOrder="4">
+        <Note_ID>1F74034C-3DD8-489E-9AB4-601895F0D967</Note_ID>
+        <Category_ID>2a1ae6ae-d132-4ed2-941b-bc2df7f7305b</Category_ID>
+      </note_categories>
+      <Source diffgr:id="Source1" msdata:rowOrder="0">
+        <Note_ID>C6C91CE4-FAA7-41DE-8DA7-1E5C71182DBD</Note_ID>
+        <Category_ID>Clip</Category_ID>
+      </Source>
+      <Source diffgr:id="Source2" msdata:rowOrder="1">
+        <Note_ID>9F7712A3-0BC5-42FB-99DF-FC9F760EE5D5</Note_ID>
+        <Category_ID>Clip</Category_ID>
+      </Source>
+      <Source diffgr:id="Source3" msdata:rowOrder="2">
+        <Note_ID>6FF8FA10-3941-485F-91F9-2531AAFCC70F</Note_ID>
+        <Category_ID>Clip</Category_ID>
+      </Source>
+      <Source diffgr:id="Source4" msdata:rowOrder="3">
+        <Note_ID>50F1E2CB-A803-4EBB-9E3C-C191351B9A08</Note_ID>
+        <Category_ID>Clip</Category_ID>
+      </Source>
+      <Source diffgr:id="Source5" msdata:rowOrder="4">
+        <Note_ID>F52F53F1-CC4D-4C03-8190-46105F899A1B</Note_ID>
+        <Category_ID>Clip</Category_ID>
+      </Source>
+      <Source diffgr:id="Source6" msdata:rowOrder="5">
+        <Note_ID>1F74034C-3DD8-489E-9AB4-601895F0D967</Note_ID>
+        <Category_ID>Client</Category_ID>
+      </Source>
+      <Source diffgr:id="Source7" msdata:rowOrder="6">
+        <Note_ID>19CF6EDF-5DD2-447F-A87F-A724AB4D238F</Note_ID>
+        <Category_ID>Clip</Category_ID>
+      </Source>
+      <Source diffgr:id="Source8" msdata:rowOrder="7">
+        <Note_ID>AA7B9DAD-1C10-4689-AECE-2B036D25ADBC</Note_ID>
+        <Category_ID>Clip</Category_ID>
+      </Source>
+      <Source diffgr:id="Source9" msdata:rowOrder="8">
+        <Note_ID>826C9952-2666-4EA0-8EE2-4299CC97016E</Note_ID>
+        <Category_ID>Clip</Category_ID>
+      </Source>
+      <Source diffgr:id="Source10" msdata:rowOrder="9">
+        <Note_ID>507DFC6C-02B4-488A-BBCD-BD00A3DC1FEA</Note_ID>
+        <Category_ID>Clip</Category_ID>
+      </Source>
+      <Attachments diffgr:id="Attachments1" msdata:rowOrder="0">
+        <Note_ID>1F74034C-3DD8-489E-9AB4-601895F0D967</Note_ID>
+        <Category_ID>045ba54e-e390-4c5a-bc10-e4a3663a4153</Category_ID>
+        <Name>10 mi run schedule</Name>
+        <Extension>xlsx</Extension>
+        <Byte_Size>13317</Byte_Size>
+        <Create_Dt>2008-12-29T04:10:59.793-05:00</Create_Dt>
+        <Update_Dt>2008-12-29T04:10:59.793-05:00</Update_Dt>
+      </Attachments>
+    </NewDataSet>
+  </diffgr:diffgram>
+</DataSet>

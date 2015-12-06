@@ -1,0 +1,53 @@
+﻿
+.NewTagInput, .MainControlSearchInput
+{
+    height: 22px;
+    line-height: 22px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.elementInput
+{
+	width: 100%;
+}
+
+input.elementInput 
+{	/* There are textareas that are elementInput as well */
+	height: 22px;
+	line-height: 22px;
+}
+
+.ie .NewTagInput .elementInput, .ie .MainControlSearchInput .elementInput
+{   /* We have to set this to a specific width or else when we type 
+    *   the input box resizes and covers up the icon
+    */
+    width: 120px;
+}
+
+img.elementActionIcon
+{
+    padding:0px;
+    float: right;
+    margin-right: -19px; 
+    margin-top: 3px;
+}
+
+.ie img.elementActionIcon
+{
+    margin-right: -20px;
+    margin-left: 2px;
+}
+
+
+.NewTagInput img.btnMouseDownTrans, .MainControlSearchInput img.btnMouseDownTrans
+{
+    margin-top: 4px;
+    margin-right: -20px;
+}
+
+.ie .NewTagInput img.btnMouseDownTrans, .ie .MainControlSearchInput img.btnMouseDownTrans
+{
+    margin-right: -21px;
+    margin-left: 3px;
+}

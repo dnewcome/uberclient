@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ubernote">
+</Property><Property Name="Solution File" Value="C:\Users\Administrator\Desktop\ubernote-dev\sandbox\ubernote\Client\ubernote.sln">
+</Property><Property Name="Date" Value="Sunday, April 10, 2011">
+</Property><Property Name="Time" Value="15:27 PM">
+</Property></Properties><Event ErrorLevel="2" Project="http://localhost/ubernote/Client/" Source="http://localhost/ubernote/Client" Description="Unable to open the Web site 'http://localhost/ubernote/Client'. Visual Web Developer does not support opening SharePoint Web sites. See Help for more details.">
+</Event><Event ErrorLevel="2" Project="http://localhost/ubernote/Services/Webservice/" Source="http://localhost/ubernote/Services/Webservice" Description="Unable to open the Web site 'http://localhost/ubernote/Services/Webservice'. Visual Web Developer does not support opening SharePoint Web sites. See Help for more details.">
+</Event><Event ErrorLevel="2" Project="http://localhost/Ubernote/pages/" Source="http://localhost/Ubernote/pages" Description="Unable to open the Web site 'http://localhost/Ubernote/pages'. Visual Web Developer does not support opening SharePoint Web sites. See Help for more details.">
+</Event><Event ErrorLevel="2" Project="http://localhost/Ubernote/webtools/" Source="http://localhost/Ubernote/webtools" Description="Unable to open the Web site 'http://localhost/Ubernote/webtools'. Visual Web Developer does not support opening SharePoint Web sites. See Help for more details.">
+</Event><Event ErrorLevel="2" Project="http://localhost/Ubernote/ClientPages/" Source="http://localhost/Ubernote/ClientPages" Description="Unable to open the Web site 'http://localhost/Ubernote/ClientPages'. Visual Web Developer does not support opening SharePoint Web sites. See Help for more details.">
+</Event><Event ErrorLevel="2" Project="http://localhost/Ubernote/UserSites/" Source="http://localhost/Ubernote/UserSites" Description="Unable to open the Web site 'http://localhost/Ubernote/UserSites'. Visual Web Developer does not support opening SharePoint Web sites. See Help for more details.">
+</Event><Event ErrorLevel="0" Project="" Source="ubernote.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="ubernote.sln" Description="Converted">
+</Event></UpgradeLog>

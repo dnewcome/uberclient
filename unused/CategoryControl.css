@@ -1,0 +1,11 @@
+﻿#dlgCategories .catlist {
+	position: relative;
+	overflow-y: scroll;
+	height: 80%;
+	width: 100%
+}
+#dlgCategories button {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}

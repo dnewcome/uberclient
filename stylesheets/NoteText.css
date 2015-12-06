@@ -1,0 +1,100 @@
+﻿body,div,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding-top:0;
+	padding-bottom:0;
+	padding-right:0;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+address,caption,cite,code,dfn,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+
+ol,ul {
+	/*list-style:none;*/
+    margin-left: 20px;  /* make this standard across all browsers */
+    padding-left: 20px;
+    background: inherit;	
+}
+
+li {
+    margin-left: 0px;  /* make this standard across all browsers */
+    padding-left: 0px;
+    background: inherit;
+}
+
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+
+body
+{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #ffffff;
+    behavior:url("../ClientPages/stylesheets/csshover.htc"); 
+}
+
+pre {color:#000; font-family:Arial, Helvetica, sans-serif; font-size:1em; margin:8px;}
+
+.uberCheckboxList
+{
+    list-style-type:none;
+    margin-left: 3px;   /* Try to align the icon with the normal bullets */
+}
+
+
+.uberCheckboxList li
+{
+    list-style-type:none; 
+    margin-left: 20px;
+    padding-bottom: 2px;
+    list-style-image:  url(../images/uncheck.png);
+}
+
+.ie .uberCheckboxList li
+{
+    margin-left: 15px;
+}
+
+.uberCheckboxList li.checkboxSelected
+{
+    list-style-image:  url(../images/check.png);
+    text-decoration:  line-through;
+}
+
+.rounded7px {
+    -moz-border-radius: 7px;	
+    -webkit-border-radius: 7px;
+	border-radius: 7px;
+}
+
+
+.rounded7pxtop {
+	-moz-border-radius: 7px 7px 0 0;
+	-webkit-border-radius: 7px 7px 0 0;
+	border-radius: 7px 7px 0 0;
+}
+
+a.notelink {
+    background-attachment:scroll;
+    background-color:transparent;
+    background-image:url(../images/page_link.png);
+    background-repeat:no-repeat;
+    padding-left:15px;
+}

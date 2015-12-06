@@ -1,0 +1,12 @@
+﻿.MainControlSearchInput
+{
+    padding-right: 18px;
+}
+
+.elementInput, .elementViewsPane .NewTagInput .elementInput
+{
+    height:22px;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}

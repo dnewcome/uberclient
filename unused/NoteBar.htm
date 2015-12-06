@@ -1,0 +1,28 @@
+<div class="NoteBar minimizehide">
+    <div class="line">
+        <span class="cornerControls">
+	        <img title="{#_localStrings.NEW_WINDOW}" alt="{#_localStrings.NEW_WINDOW}" class="icon elementExternal" src="images/1x1spacer.gif" />
+            <span title="{#_localStrings.DELETE}" alt="{#_localStrings.DELETE}" class="elementDelete"><img class="icon" src="images/1x1spacer.gif" />{#_localStrings.DELETE}</span>
+            <span title="{#_localStrings.TRASH_NOTE}" alt="{#_localStrings.TRASH_NOTE}" class="elementTrash"><img class="icon" src="images/1x1spacer.gif" />{#_localStrings.TRASH}</span>
+	        <span title="{#_localStrings.UNTRASH}" alt="{#_localStrings.UNTRASH}" class="elementUntrash"><img class="icon" src="images/1x1spacer.gif" />{#_localStrings.UNTRASH}</span>
+	        <span title="{#_localStrings.ACTIONS_DESC}" alt="{#_localStrings.ACTIONS_DESC}" class="elementActions"><img class="icon" src="images/1x1spacer.gif" />{#_localStrings.ACTIONS}<img class="icon elementMenuOpen" src="images/1x1spacer.gif"/></span>
+            <span title="{#_localStrings.TAG_MENU}" alt="{#_localStrings.TAG_MENU}" class="elementCategories"><img class="icon" src="images/1x1spacer.gif" />{#_localStrings.TAG}<img class="icon elementMenuOpen" src="images/1x1spacer.gif"/></span>
+            <span title="{#_localStrings.EMAIL_SHARE_NOTE}" alt="{#_localStrings.EMAIL_SHARE_NOTE}" class="elementShare"><img class="icon" src="images/1x1spacer.gif" />{#_localStrings.SHARE}<img class="icon elementMenuOpen" src="images/1x1spacer.gif"/></span>
+        </span>
+        <img class="icon elementStar" src="images/1x1spacer.gif" title="{#_localStrings.IMPORTANT_STATUS}" alt="{#_localStrings.IMPORTANT_STATUS}" />
+        <span title="{#_localStrings.CLICK_TO_EDIT_TITLE}"  alt="{#_localStrings.CLICK_TO_EDIT_TITLE}" _type="title" _dataField="Title" _emptytext="{#_localStrings.EMPTY_TITLE_CONFIRM}" class="extrainfo elementTitle"></span>
+    </div>
+    <div class="line">  <!-- icon is a Mozilla fix to make sure the div is at least 18px high so the background covers the entire icon set -->
+        <div class="tags"></div>
+        <span class="noteDates date">
+            {#_localStrings.CREATE_DATE_HEADER}<span class="elementCreateDate" _format="EXPANDINGDATE" ></span>
+            <span class="elementShareFrom">
+                {<span class="elementShareOwner extrainfo" _type="username" _dataField="Share_Owner"></span>}
+            </span>
+            {#_localStrings.MODIFIED_DATE_HEADER}<span class="elementUpdateDate elementDate" _format="TODAYFUZZY" ></span>
+            <span class="elementUpdateUserContainer" >
+                {<span class="elementUpdateUser extrainfo" _type="username" _dataField="Update_User"></span>}
+            </span>     
+        </span>
+    </div>
+</div> 

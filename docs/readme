@@ -1,0 +1,9 @@
+--update:
+using jsdoc now for generating docs.  Just run jsdoc.cmd.
+
+
+// old:
+parse documentation blocks out of the javascript sources by running docgen.cmd
+this uses sgrep.pl to do the parsing. sgrep is a slightly modified version of this script http://www.kclug.org/pipermail/kclug/2005-June/028106.html
+
+generates file docs.txt

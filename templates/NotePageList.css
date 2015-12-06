@@ -1,0 +1,26 @@
+﻿.NumberList span, .elementNoteNumbers span
+{
+    padding: 0px 3px 4px;
+}
+
+.NotePageList .elementMaximize, .NotePageList .elementMinimize
+{
+    padding-left: 16px;
+    padding-right: 10px;
+}
+
+.NotePageList .selected
+{
+	padding: 0px;
+	margin: 0px 3px;
+}
+
+.elementNoteNumbers .lastnotecontainer, .elementNoteNumbers .multiplenotes, .differentfirstlast .singlenote
+{
+    display: none;
+}
+
+.differentfirstlast .lastnotecontainer, .differentfirstlast .multiplenotes
+{
+    display: inline;
+}

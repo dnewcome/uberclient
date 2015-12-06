@@ -1,0 +1,2187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.ubernote.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://www.ubernote.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.ubernote.com/">
+      <s:element name="NoteCategoryTag">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="noteID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="categoryID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NoteCategoryTagResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="NoteCategoryUnTag">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="noteID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="categoryID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NoteCategoryUnTagResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="NotesGetRecentlyUpdated">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="startRow" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="maxRows" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NotesGetRecentlyUpdatedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NotesGetRecentlyUpdatedResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NotesRevisionsGet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="noteID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="startRow" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="maxRows" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NotesRevisionsGetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NotesRevisionsGetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NotesGetAll">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="startRow" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="maxRows" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NotesGetAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NotesGetAllResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NotesGetAllByUpdateDt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="startRow" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="maxRows" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NotesGetAllByUpdateDtResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NotesGetAllByUpdateDtResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NotesGetByViewNode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userViewNodeID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="startRow" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="maxRows" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NotesGetByViewNodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NotesGetByViewNodeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NoteSearch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="search" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="startRow" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="maxRows" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NoteSearchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NoteSearchResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NotesGetTrashed">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="startRow" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="maxRows" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NotesGetTrashedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NotesGetTrashedResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NoteCategoriesGet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="noteID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NoteCategoriesGetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NoteCategoriesGetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NoteTrash">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="noteID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NoteTrashResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="NoteAdd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NoteAddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NoteAddResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NoteSave">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="body" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NoteSaveResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="NoteRename">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="noteID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NoteRenameResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="NoteUnTrash">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="noteID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NoteUnTrashResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="NoteRemove">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="noteID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NoteRemoveResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UserViewNodeAdd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userViewID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userViewNodeParentID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userCategoryID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserViewNodeAddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserViewNodeAddResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserViewNodesGet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userViewID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userViewNodeID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserViewNodesGetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserViewNodesGetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserViewNodeRemove">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userViewNodeID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserViewNodeRemoveResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UserViewNodeInsert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userViewNodeID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="sequenceNum" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserViewNodeInsertResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="userAuthenticate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="userAuthenticateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userAuthenticateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="userAccountAdd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="userAccountAddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userAccountAddResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserChangePassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="newPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserChangePasswordResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UserViewsGet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserViewsGetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserViewsGetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserViewRemove">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userViewID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserViewRemoveResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UserViewAdd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserViewAddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserViewAddResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="noteTypeAdd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="layout" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="noteTypeAddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="noteTypeAddResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserCategoryRename">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userCategoryID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserCategoryRenameResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UserCategoriesGet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserCategoriesGetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserCategoriesGetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserCategoryAdd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="catName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserCategoryAddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserCategoryAddResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserCategoryRemove">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userCategoryID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserCategoryRemoveResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ping">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="pingResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="FileUpload">
+        <s:complexType />
+      </s:element>
+      <s:element name="FileUploadResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UserCategoriesNotesGet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserCategoriesNotesGetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserCategoriesNotesGetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataSet" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:element ref="s:schema" />
+            <s:any />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataTable" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="NoteCategoryTagSoapIn">
+    <wsdl:part name="parameters" element="tns:NoteCategoryTag" />
+  </wsdl:message>
+  <wsdl:message name="NoteCategoryTagSoapOut">
+    <wsdl:part name="parameters" element="tns:NoteCategoryTagResponse" />
+  </wsdl:message>
+  <wsdl:message name="NoteCategoryUnTagSoapIn">
+    <wsdl:part name="parameters" element="tns:NoteCategoryUnTag" />
+  </wsdl:message>
+  <wsdl:message name="NoteCategoryUnTagSoapOut">
+    <wsdl:part name="parameters" element="tns:NoteCategoryUnTagResponse" />
+  </wsdl:message>
+  <wsdl:message name="NotesGetRecentlyUpdatedSoapIn">
+    <wsdl:part name="parameters" element="tns:NotesGetRecentlyUpdated" />
+  </wsdl:message>
+  <wsdl:message name="NotesGetRecentlyUpdatedSoapOut">
+    <wsdl:part name="parameters" element="tns:NotesGetRecentlyUpdatedResponse" />
+  </wsdl:message>
+  <wsdl:message name="NotesRevisionsGetSoapIn">
+    <wsdl:part name="parameters" element="tns:NotesRevisionsGet" />
+  </wsdl:message>
+  <wsdl:message name="NotesRevisionsGetSoapOut">
+    <wsdl:part name="parameters" element="tns:NotesRevisionsGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="NotesGetAllSoapIn">
+    <wsdl:part name="parameters" element="tns:NotesGetAll" />
+  </wsdl:message>
+  <wsdl:message name="NotesGetAllSoapOut">
+    <wsdl:part name="parameters" element="tns:NotesGetAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="NotesGetAllByUpdateDtSoapIn">
+    <wsdl:part name="parameters" element="tns:NotesGetAllByUpdateDt" />
+  </wsdl:message>
+  <wsdl:message name="NotesGetAllByUpdateDtSoapOut">
+    <wsdl:part name="parameters" element="tns:NotesGetAllByUpdateDtResponse" />
+  </wsdl:message>
+  <wsdl:message name="NotesGetByViewNodeSoapIn">
+    <wsdl:part name="parameters" element="tns:NotesGetByViewNode" />
+  </wsdl:message>
+  <wsdl:message name="NotesGetByViewNodeSoapOut">
+    <wsdl:part name="parameters" element="tns:NotesGetByViewNodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="NoteSearchSoapIn">
+    <wsdl:part name="parameters" element="tns:NoteSearch" />
+  </wsdl:message>
+  <wsdl:message name="NoteSearchSoapOut">
+    <wsdl:part name="parameters" element="tns:NoteSearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="NotesGetTrashedSoapIn">
+    <wsdl:part name="parameters" element="tns:NotesGetTrashed" />
+  </wsdl:message>
+  <wsdl:message name="NotesGetTrashedSoapOut">
+    <wsdl:part name="parameters" element="tns:NotesGetTrashedResponse" />
+  </wsdl:message>
+  <wsdl:message name="NoteCategoriesGetSoapIn">
+    <wsdl:part name="parameters" element="tns:NoteCategoriesGet" />
+  </wsdl:message>
+  <wsdl:message name="NoteCategoriesGetSoapOut">
+    <wsdl:part name="parameters" element="tns:NoteCategoriesGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="NoteTrashSoapIn">
+    <wsdl:part name="parameters" element="tns:NoteTrash" />
+  </wsdl:message>
+  <wsdl:message name="NoteTrashSoapOut">
+    <wsdl:part name="parameters" element="tns:NoteTrashResponse" />
+  </wsdl:message>
+  <wsdl:message name="NoteAddSoapIn">
+    <wsdl:part name="parameters" element="tns:NoteAdd" />
+  </wsdl:message>
+  <wsdl:message name="NoteAddSoapOut">
+    <wsdl:part name="parameters" element="tns:NoteAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="NoteSaveSoapIn">
+    <wsdl:part name="parameters" element="tns:NoteSave" />
+  </wsdl:message>
+  <wsdl:message name="NoteSaveSoapOut">
+    <wsdl:part name="parameters" element="tns:NoteSaveResponse" />
+  </wsdl:message>
+  <wsdl:message name="NoteRenameSoapIn">
+    <wsdl:part name="parameters" element="tns:NoteRename" />
+  </wsdl:message>
+  <wsdl:message name="NoteRenameSoapOut">
+    <wsdl:part name="parameters" element="tns:NoteRenameResponse" />
+  </wsdl:message>
+  <wsdl:message name="NoteUnTrashSoapIn">
+    <wsdl:part name="parameters" element="tns:NoteUnTrash" />
+  </wsdl:message>
+  <wsdl:message name="NoteUnTrashSoapOut">
+    <wsdl:part name="parameters" element="tns:NoteUnTrashResponse" />
+  </wsdl:message>
+  <wsdl:message name="NoteRemoveSoapIn">
+    <wsdl:part name="parameters" element="tns:NoteRemove" />
+  </wsdl:message>
+  <wsdl:message name="NoteRemoveSoapOut">
+    <wsdl:part name="parameters" element="tns:NoteRemoveResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserViewNodeAddSoapIn">
+    <wsdl:part name="parameters" element="tns:UserViewNodeAdd" />
+  </wsdl:message>
+  <wsdl:message name="UserViewNodeAddSoapOut">
+    <wsdl:part name="parameters" element="tns:UserViewNodeAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserViewNodesGetSoapIn">
+    <wsdl:part name="parameters" element="tns:UserViewNodesGet" />
+  </wsdl:message>
+  <wsdl:message name="UserViewNodesGetSoapOut">
+    <wsdl:part name="parameters" element="tns:UserViewNodesGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserViewNodeRemoveSoapIn">
+    <wsdl:part name="parameters" element="tns:UserViewNodeRemove" />
+  </wsdl:message>
+  <wsdl:message name="UserViewNodeRemoveSoapOut">
+    <wsdl:part name="parameters" element="tns:UserViewNodeRemoveResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserViewNodeInsertSoapIn">
+    <wsdl:part name="parameters" element="tns:UserViewNodeInsert" />
+  </wsdl:message>
+  <wsdl:message name="UserViewNodeInsertSoapOut">
+    <wsdl:part name="parameters" element="tns:UserViewNodeInsertResponse" />
+  </wsdl:message>
+  <wsdl:message name="userAuthenticateSoapIn">
+    <wsdl:part name="parameters" element="tns:userAuthenticate" />
+  </wsdl:message>
+  <wsdl:message name="userAuthenticateSoapOut">
+    <wsdl:part name="parameters" element="tns:userAuthenticateResponse" />
+  </wsdl:message>
+  <wsdl:message name="userAccountAddSoapIn">
+    <wsdl:part name="parameters" element="tns:userAccountAdd" />
+  </wsdl:message>
+  <wsdl:message name="userAccountAddSoapOut">
+    <wsdl:part name="parameters" element="tns:userAccountAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserChangePasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:UserChangePassword" />
+  </wsdl:message>
+  <wsdl:message name="UserChangePasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:UserChangePasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserViewsGetSoapIn">
+    <wsdl:part name="parameters" element="tns:UserViewsGet" />
+  </wsdl:message>
+  <wsdl:message name="UserViewsGetSoapOut">
+    <wsdl:part name="parameters" element="tns:UserViewsGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserViewRemoveSoapIn">
+    <wsdl:part name="parameters" element="tns:UserViewRemove" />
+  </wsdl:message>
+  <wsdl:message name="UserViewRemoveSoapOut">
+    <wsdl:part name="parameters" element="tns:UserViewRemoveResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserViewAddSoapIn">
+    <wsdl:part name="parameters" element="tns:UserViewAdd" />
+  </wsdl:message>
+  <wsdl:message name="UserViewAddSoapOut">
+    <wsdl:part name="parameters" element="tns:UserViewAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="noteTypeAddSoapIn">
+    <wsdl:part name="parameters" element="tns:noteTypeAdd" />
+  </wsdl:message>
+  <wsdl:message name="noteTypeAddSoapOut">
+    <wsdl:part name="parameters" element="tns:noteTypeAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserCategoryRenameSoapIn">
+    <wsdl:part name="parameters" element="tns:UserCategoryRename" />
+  </wsdl:message>
+  <wsdl:message name="UserCategoryRenameSoapOut">
+    <wsdl:part name="parameters" element="tns:UserCategoryRenameResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserCategoriesGetSoapIn">
+    <wsdl:part name="parameters" element="tns:UserCategoriesGet" />
+  </wsdl:message>
+  <wsdl:message name="UserCategoriesGetSoapOut">
+    <wsdl:part name="parameters" element="tns:UserCategoriesGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserCategoryAddSoapIn">
+    <wsdl:part name="parameters" element="tns:UserCategoryAdd" />
+  </wsdl:message>
+  <wsdl:message name="UserCategoryAddSoapOut">
+    <wsdl:part name="parameters" element="tns:UserCategoryAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserCategoryRemoveSoapIn">
+    <wsdl:part name="parameters" element="tns:UserCategoryRemove" />
+  </wsdl:message>
+  <wsdl:message name="UserCategoryRemoveSoapOut">
+    <wsdl:part name="parameters" element="tns:UserCategoryRemoveResponse" />
+  </wsdl:message>
+  <wsdl:message name="pingSoapIn">
+    <wsdl:part name="parameters" element="tns:ping" />
+  </wsdl:message>
+  <wsdl:message name="pingSoapOut">
+    <wsdl:part name="parameters" element="tns:pingResponse" />
+  </wsdl:message>
+  <wsdl:message name="FileUploadSoapIn">
+    <wsdl:part name="parameters" element="tns:FileUpload" />
+  </wsdl:message>
+  <wsdl:message name="FileUploadSoapOut">
+    <wsdl:part name="parameters" element="tns:FileUploadResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserCategoriesNotesGetSoapIn">
+    <wsdl:part name="parameters" element="tns:UserCategoriesNotesGet" />
+  </wsdl:message>
+  <wsdl:message name="UserCategoriesNotesGetSoapOut">
+    <wsdl:part name="parameters" element="tns:UserCategoriesNotesGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="NoteCategoryTagHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+    <wsdl:part name="noteID" type="s:string" />
+    <wsdl:part name="categoryID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="NoteCategoryTagHttpPostOut" />
+  <wsdl:message name="NoteCategoryUnTagHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+    <wsdl:part name="noteID" type="s:string" />
+    <wsdl:part name="categoryID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="NoteCategoryUnTagHttpPostOut" />
+  <wsdl:message name="NotesGetRecentlyUpdatedHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+    <wsdl:part name="startRow" type="s:string" />
+    <wsdl:part name="maxRows" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="NotesGetRecentlyUpdatedHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="NotesRevisionsGetHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+    <wsdl:part name="noteID" type="s:string" />
+    <wsdl:part name="startRow" type="s:string" />
+    <wsdl:part name="maxRows" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="NotesRevisionsGetHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="NotesGetAllHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+    <wsdl:part name="startRow" type="s:string" />
+    <wsdl:part name="maxRows" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="NotesGetAllHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="NotesGetAllByUpdateDtHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+    <wsdl:part name="startRow" type="s:string" />
+    <wsdl:part name="maxRows" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="NotesGetAllByUpdateDtHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="NotesGetByViewNodeHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+    <wsdl:part name="userViewNodeID" type="s:string" />
+    <wsdl:part name="startRow" type="s:string" />
+    <wsdl:part name="maxRows" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="NotesGetByViewNodeHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="NoteSearchHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+    <wsdl:part name="search" type="s:string" />
+    <wsdl:part name="startRow" type="s:string" />
+    <wsdl:part name="maxRows" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="NoteSearchHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="NotesGetTrashedHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+    <wsdl:part name="startRow" type="s:string" />
+    <wsdl:part name="maxRows" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="NotesGetTrashedHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="NoteCategoriesGetHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+    <wsdl:part name="noteID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="NoteCategoriesGetHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="NoteTrashHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+    <wsdl:part name="noteID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="NoteTrashHttpPostOut" />
+  <wsdl:message name="NoteAddHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="NoteAddHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="NoteSaveHttpPostIn">
+    <wsdl:part name="ID" type="s:string" />
+    <wsdl:part name="title" type="s:string" />
+    <wsdl:part name="body" type="s:string" />
+    <wsdl:part name="sessionID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="NoteSaveHttpPostOut" />
+  <wsdl:message name="NoteRenameHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+    <wsdl:part name="noteID" type="s:string" />
+    <wsdl:part name="title" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="NoteRenameHttpPostOut" />
+  <wsdl:message name="NoteUnTrashHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+    <wsdl:part name="noteID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="NoteUnTrashHttpPostOut" />
+  <wsdl:message name="NoteRemoveHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+    <wsdl:part name="noteID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="NoteRemoveHttpPostOut" />
+  <wsdl:message name="UserViewNodeAddHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+    <wsdl:part name="userViewID" type="s:string" />
+    <wsdl:part name="userViewNodeParentID" type="s:string" />
+    <wsdl:part name="userCategoryID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UserViewNodeAddHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UserViewNodesGetHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+    <wsdl:part name="userViewID" type="s:string" />
+    <wsdl:part name="userViewNodeID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UserViewNodesGetHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="UserViewNodeRemoveHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+    <wsdl:part name="userViewNodeID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UserViewNodeRemoveHttpPostOut" />
+  <wsdl:message name="UserViewNodeInsertHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+    <wsdl:part name="userViewNodeID" type="s:string" />
+    <wsdl:part name="sequenceNum" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UserViewNodeInsertHttpPostOut" />
+  <wsdl:message name="userAuthenticateHttpPostIn">
+    <wsdl:part name="username" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="userAuthenticateHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="userAccountAddHttpPostIn">
+    <wsdl:part name="username" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="email" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="userAccountAddHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UserChangePasswordHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+    <wsdl:part name="newPassword" type="s:string" />
+    <wsdl:part name="oldPassword" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UserChangePasswordHttpPostOut" />
+  <wsdl:message name="UserViewsGetHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UserViewsGetHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="UserViewRemoveHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+    <wsdl:part name="userViewID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UserViewRemoveHttpPostOut" />
+  <wsdl:message name="UserViewAddHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+    <wsdl:part name="name" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UserViewAddHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="noteTypeAddHttpPostIn">
+    <wsdl:part name="name" type="s:string" />
+    <wsdl:part name="layout" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="noteTypeAddHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UserCategoryRenameHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+    <wsdl:part name="userCategoryID" type="s:string" />
+    <wsdl:part name="name" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UserCategoryRenameHttpPostOut" />
+  <wsdl:message name="UserCategoriesGetHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UserCategoriesGetHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="UserCategoryAddHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+    <wsdl:part name="catName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UserCategoryAddHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UserCategoryRemoveHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+    <wsdl:part name="userCategoryID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UserCategoryRemoveHttpPostOut" />
+  <wsdl:message name="pingHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="pingHttpPostOut" />
+  <wsdl:message name="FileUploadHttpPostIn" />
+  <wsdl:message name="FileUploadHttpPostOut" />
+  <wsdl:message name="UserCategoriesNotesGetHttpPostIn">
+    <wsdl:part name="sessionID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UserCategoriesNotesGetHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="NoteCategoryTag">
+      <wsdl:input message="tns:NoteCategoryTagSoapIn" />
+      <wsdl:output message="tns:NoteCategoryTagSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NoteCategoryUnTag">
+      <wsdl:input message="tns:NoteCategoryUnTagSoapIn" />
+      <wsdl:output message="tns:NoteCategoryUnTagSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NotesGetRecentlyUpdated">
+      <wsdl:input message="tns:NotesGetRecentlyUpdatedSoapIn" />
+      <wsdl:output message="tns:NotesGetRecentlyUpdatedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NotesRevisionsGet">
+      <wsdl:input message="tns:NotesRevisionsGetSoapIn" />
+      <wsdl:output message="tns:NotesRevisionsGetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NotesGetAll">
+      <wsdl:input message="tns:NotesGetAllSoapIn" />
+      <wsdl:output message="tns:NotesGetAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NotesGetAllByUpdateDt">
+      <wsdl:input message="tns:NotesGetAllByUpdateDtSoapIn" />
+      <wsdl:output message="tns:NotesGetAllByUpdateDtSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NotesGetByViewNode">
+      <wsdl:input message="tns:NotesGetByViewNodeSoapIn" />
+      <wsdl:output message="tns:NotesGetByViewNodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NoteSearch">
+      <wsdl:input message="tns:NoteSearchSoapIn" />
+      <wsdl:output message="tns:NoteSearchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NotesGetTrashed">
+      <wsdl:input message="tns:NotesGetTrashedSoapIn" />
+      <wsdl:output message="tns:NotesGetTrashedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NoteCategoriesGet">
+      <wsdl:input message="tns:NoteCategoriesGetSoapIn" />
+      <wsdl:output message="tns:NoteCategoriesGetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NoteTrash">
+      <wsdl:input message="tns:NoteTrashSoapIn" />
+      <wsdl:output message="tns:NoteTrashSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NoteAdd">
+      <wsdl:input message="tns:NoteAddSoapIn" />
+      <wsdl:output message="tns:NoteAddSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NoteSave">
+      <wsdl:input message="tns:NoteSaveSoapIn" />
+      <wsdl:output message="tns:NoteSaveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NoteRename">
+      <wsdl:input message="tns:NoteRenameSoapIn" />
+      <wsdl:output message="tns:NoteRenameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NoteUnTrash">
+      <wsdl:input message="tns:NoteUnTrashSoapIn" />
+      <wsdl:output message="tns:NoteUnTrashSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NoteRemove">
+      <wsdl:input message="tns:NoteRemoveSoapIn" />
+      <wsdl:output message="tns:NoteRemoveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserViewNodeAdd">
+      <wsdl:input message="tns:UserViewNodeAddSoapIn" />
+      <wsdl:output message="tns:UserViewNodeAddSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserViewNodesGet">
+      <wsdl:input message="tns:UserViewNodesGetSoapIn" />
+      <wsdl:output message="tns:UserViewNodesGetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserViewNodeRemove">
+      <wsdl:input message="tns:UserViewNodeRemoveSoapIn" />
+      <wsdl:output message="tns:UserViewNodeRemoveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserViewNodeInsert">
+      <wsdl:input message="tns:UserViewNodeInsertSoapIn" />
+      <wsdl:output message="tns:UserViewNodeInsertSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="userAuthenticate">
+      <wsdl:input message="tns:userAuthenticateSoapIn" />
+      <wsdl:output message="tns:userAuthenticateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="userAccountAdd">
+      <wsdl:input message="tns:userAccountAddSoapIn" />
+      <wsdl:output message="tns:userAccountAddSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserChangePassword">
+      <wsdl:input message="tns:UserChangePasswordSoapIn" />
+      <wsdl:output message="tns:UserChangePasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserViewsGet">
+      <wsdl:input message="tns:UserViewsGetSoapIn" />
+      <wsdl:output message="tns:UserViewsGetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserViewRemove">
+      <wsdl:input message="tns:UserViewRemoveSoapIn" />
+      <wsdl:output message="tns:UserViewRemoveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserViewAdd">
+      <wsdl:input message="tns:UserViewAddSoapIn" />
+      <wsdl:output message="tns:UserViewAddSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="noteTypeAdd">
+      <wsdl:input message="tns:noteTypeAddSoapIn" />
+      <wsdl:output message="tns:noteTypeAddSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserCategoryRename">
+      <wsdl:input message="tns:UserCategoryRenameSoapIn" />
+      <wsdl:output message="tns:UserCategoryRenameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserCategoriesGet">
+      <wsdl:input message="tns:UserCategoriesGetSoapIn" />
+      <wsdl:output message="tns:UserCategoriesGetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserCategoryAdd">
+      <wsdl:input message="tns:UserCategoryAddSoapIn" />
+      <wsdl:output message="tns:UserCategoryAddSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserCategoryRemove">
+      <wsdl:input message="tns:UserCategoryRemoveSoapIn" />
+      <wsdl:output message="tns:UserCategoryRemoveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ping">
+      <wsdl:input message="tns:pingSoapIn" />
+      <wsdl:output message="tns:pingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FileUpload">
+      <wsdl:input message="tns:FileUploadSoapIn" />
+      <wsdl:output message="tns:FileUploadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserCategoriesNotesGet">
+      <wsdl:input message="tns:UserCategoriesNotesGetSoapIn" />
+      <wsdl:output message="tns:UserCategoriesNotesGetSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiceHttpPost">
+    <wsdl:operation name="NoteCategoryTag">
+      <wsdl:input message="tns:NoteCategoryTagHttpPostIn" />
+      <wsdl:output message="tns:NoteCategoryTagHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NoteCategoryUnTag">
+      <wsdl:input message="tns:NoteCategoryUnTagHttpPostIn" />
+      <wsdl:output message="tns:NoteCategoryUnTagHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NotesGetRecentlyUpdated">
+      <wsdl:input message="tns:NotesGetRecentlyUpdatedHttpPostIn" />
+      <wsdl:output message="tns:NotesGetRecentlyUpdatedHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NotesRevisionsGet">
+      <wsdl:input message="tns:NotesRevisionsGetHttpPostIn" />
+      <wsdl:output message="tns:NotesRevisionsGetHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NotesGetAll">
+      <wsdl:input message="tns:NotesGetAllHttpPostIn" />
+      <wsdl:output message="tns:NotesGetAllHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NotesGetAllByUpdateDt">
+      <wsdl:input message="tns:NotesGetAllByUpdateDtHttpPostIn" />
+      <wsdl:output message="tns:NotesGetAllByUpdateDtHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NotesGetByViewNode">
+      <wsdl:input message="tns:NotesGetByViewNodeHttpPostIn" />
+      <wsdl:output message="tns:NotesGetByViewNodeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NoteSearch">
+      <wsdl:input message="tns:NoteSearchHttpPostIn" />
+      <wsdl:output message="tns:NoteSearchHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NotesGetTrashed">
+      <wsdl:input message="tns:NotesGetTrashedHttpPostIn" />
+      <wsdl:output message="tns:NotesGetTrashedHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NoteCategoriesGet">
+      <wsdl:input message="tns:NoteCategoriesGetHttpPostIn" />
+      <wsdl:output message="tns:NoteCategoriesGetHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NoteTrash">
+      <wsdl:input message="tns:NoteTrashHttpPostIn" />
+      <wsdl:output message="tns:NoteTrashHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NoteAdd">
+      <wsdl:input message="tns:NoteAddHttpPostIn" />
+      <wsdl:output message="tns:NoteAddHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NoteSave">
+      <wsdl:input message="tns:NoteSaveHttpPostIn" />
+      <wsdl:output message="tns:NoteSaveHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NoteRename">
+      <wsdl:input message="tns:NoteRenameHttpPostIn" />
+      <wsdl:output message="tns:NoteRenameHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NoteUnTrash">
+      <wsdl:input message="tns:NoteUnTrashHttpPostIn" />
+      <wsdl:output message="tns:NoteUnTrashHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NoteRemove">
+      <wsdl:input message="tns:NoteRemoveHttpPostIn" />
+      <wsdl:output message="tns:NoteRemoveHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserViewNodeAdd">
+      <wsdl:input message="tns:UserViewNodeAddHttpPostIn" />
+      <wsdl:output message="tns:UserViewNodeAddHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserViewNodesGet">
+      <wsdl:input message="tns:UserViewNodesGetHttpPostIn" />
+      <wsdl:output message="tns:UserViewNodesGetHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserViewNodeRemove">
+      <wsdl:input message="tns:UserViewNodeRemoveHttpPostIn" />
+      <wsdl:output message="tns:UserViewNodeRemoveHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserViewNodeInsert">
+      <wsdl:input message="tns:UserViewNodeInsertHttpPostIn" />
+      <wsdl:output message="tns:UserViewNodeInsertHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="userAuthenticate">
+      <wsdl:input message="tns:userAuthenticateHttpPostIn" />
+      <wsdl:output message="tns:userAuthenticateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="userAccountAdd">
+      <wsdl:input message="tns:userAccountAddHttpPostIn" />
+      <wsdl:output message="tns:userAccountAddHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserChangePassword">
+      <wsdl:input message="tns:UserChangePasswordHttpPostIn" />
+      <wsdl:output message="tns:UserChangePasswordHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserViewsGet">
+      <wsdl:input message="tns:UserViewsGetHttpPostIn" />
+      <wsdl:output message="tns:UserViewsGetHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserViewRemove">
+      <wsdl:input message="tns:UserViewRemoveHttpPostIn" />
+      <wsdl:output message="tns:UserViewRemoveHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserViewAdd">
+      <wsdl:input message="tns:UserViewAddHttpPostIn" />
+      <wsdl:output message="tns:UserViewAddHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="noteTypeAdd">
+      <wsdl:input message="tns:noteTypeAddHttpPostIn" />
+      <wsdl:output message="tns:noteTypeAddHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserCategoryRename">
+      <wsdl:input message="tns:UserCategoryRenameHttpPostIn" />
+      <wsdl:output message="tns:UserCategoryRenameHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserCategoriesGet">
+      <wsdl:input message="tns:UserCategoriesGetHttpPostIn" />
+      <wsdl:output message="tns:UserCategoriesGetHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserCategoryAdd">
+      <wsdl:input message="tns:UserCategoryAddHttpPostIn" />
+      <wsdl:output message="tns:UserCategoryAddHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserCategoryRemove">
+      <wsdl:input message="tns:UserCategoryRemoveHttpPostIn" />
+      <wsdl:output message="tns:UserCategoryRemoveHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ping">
+      <wsdl:input message="tns:pingHttpPostIn" />
+      <wsdl:output message="tns:pingHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FileUpload">
+      <wsdl:input message="tns:FileUploadHttpPostIn" />
+      <wsdl:output message="tns:FileUploadHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserCategoriesNotesGet">
+      <wsdl:input message="tns:UserCategoriesNotesGetHttpPostIn" />
+      <wsdl:output message="tns:UserCategoriesNotesGetHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="NoteCategoryTag">
+      <soap:operation soapAction="http://www.ubernote.com/NoteCategoryTag" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoteCategoryUnTag">
+      <soap:operation soapAction="http://www.ubernote.com/NoteCategoryUnTag" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NotesGetRecentlyUpdated">
+      <soap:operation soapAction="http://www.ubernote.com/NotesGetRecentlyUpdated" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NotesRevisionsGet">
+      <soap:operation soapAction="http://www.ubernote.com/NotesRevisionsGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NotesGetAll">
+      <soap:operation soapAction="http://www.ubernote.com/NotesGetAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NotesGetAllByUpdateDt">
+      <soap:operation soapAction="http://www.ubernote.com/NotesGetAllByUpdateDt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NotesGetByViewNode">
+      <soap:operation soapAction="http://www.ubernote.com/NotesGetByViewNode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoteSearch">
+      <soap:operation soapAction="http://www.ubernote.com/NoteSearch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NotesGetTrashed">
+      <soap:operation soapAction="http://www.ubernote.com/NotesGetTrashed" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoteCategoriesGet">
+      <soap:operation soapAction="http://www.ubernote.com/NoteCategoriesGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoteTrash">
+      <soap:operation soapAction="http://www.ubernote.com/NoteTrash" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoteAdd">
+      <soap:operation soapAction="http://www.ubernote.com/NoteAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoteSave">
+      <soap:operation soapAction="http://www.ubernote.com/NoteSave" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoteRename">
+      <soap:operation soapAction="http://www.ubernote.com/NoteRename" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoteUnTrash">
+      <soap:operation soapAction="http://www.ubernote.com/NoteUnTrash" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoteRemove">
+      <soap:operation soapAction="http://www.ubernote.com/NoteRemove" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserViewNodeAdd">
+      <soap:operation soapAction="http://www.ubernote.com/UserViewNodeAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserViewNodesGet">
+      <soap:operation soapAction="http://www.ubernote.com/UserViewNodesGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserViewNodeRemove">
+      <soap:operation soapAction="http://www.ubernote.com/UserViewNodeRemove" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserViewNodeInsert">
+      <soap:operation soapAction="http://www.ubernote.com/UserViewNodeInsert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="userAuthenticate">
+      <soap:operation soapAction="http://www.ubernote.com/userAuthenticate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="userAccountAdd">
+      <soap:operation soapAction="http://www.ubernote.com/userAccountAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserChangePassword">
+      <soap:operation soapAction="http://www.ubernote.com/UserChangePassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserViewsGet">
+      <soap:operation soapAction="http://www.ubernote.com/UserViewsGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserViewRemove">
+      <soap:operation soapAction="http://www.ubernote.com/UserViewRemove" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserViewAdd">
+      <soap:operation soapAction="http://www.ubernote.com/UserViewAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="noteTypeAdd">
+      <soap:operation soapAction="http://www.ubernote.com/noteTypeAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserCategoryRename">
+      <soap:operation soapAction="http://www.ubernote.com/UserCategoryRename" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserCategoriesGet">
+      <soap:operation soapAction="http://www.ubernote.com/UserCategoriesGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserCategoryAdd">
+      <soap:operation soapAction="http://www.ubernote.com/UserCategoryAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserCategoryRemove">
+      <soap:operation soapAction="http://www.ubernote.com/UserCategoryRemove" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ping">
+      <soap:operation soapAction="http://www.ubernote.com/ping" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FileUpload">
+      <soap:operation soapAction="http://www.ubernote.com/FileUpload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserCategoriesNotesGet">
+      <soap:operation soapAction="http://www.ubernote.com/UserCategoriesNotesGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="NoteCategoryTag">
+      <soap12:operation soapAction="http://www.ubernote.com/NoteCategoryTag" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoteCategoryUnTag">
+      <soap12:operation soapAction="http://www.ubernote.com/NoteCategoryUnTag" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NotesGetRecentlyUpdated">
+      <soap12:operation soapAction="http://www.ubernote.com/NotesGetRecentlyUpdated" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NotesRevisionsGet">
+      <soap12:operation soapAction="http://www.ubernote.com/NotesRevisionsGet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NotesGetAll">
+      <soap12:operation soapAction="http://www.ubernote.com/NotesGetAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NotesGetAllByUpdateDt">
+      <soap12:operation soapAction="http://www.ubernote.com/NotesGetAllByUpdateDt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NotesGetByViewNode">
+      <soap12:operation soapAction="http://www.ubernote.com/NotesGetByViewNode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoteSearch">
+      <soap12:operation soapAction="http://www.ubernote.com/NoteSearch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NotesGetTrashed">
+      <soap12:operation soapAction="http://www.ubernote.com/NotesGetTrashed" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoteCategoriesGet">
+      <soap12:operation soapAction="http://www.ubernote.com/NoteCategoriesGet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoteTrash">
+      <soap12:operation soapAction="http://www.ubernote.com/NoteTrash" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoteAdd">
+      <soap12:operation soapAction="http://www.ubernote.com/NoteAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoteSave">
+      <soap12:operation soapAction="http://www.ubernote.com/NoteSave" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoteRename">
+      <soap12:operation soapAction="http://www.ubernote.com/NoteRename" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoteUnTrash">
+      <soap12:operation soapAction="http://www.ubernote.com/NoteUnTrash" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoteRemove">
+      <soap12:operation soapAction="http://www.ubernote.com/NoteRemove" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserViewNodeAdd">
+      <soap12:operation soapAction="http://www.ubernote.com/UserViewNodeAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserViewNodesGet">
+      <soap12:operation soapAction="http://www.ubernote.com/UserViewNodesGet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserViewNodeRemove">
+      <soap12:operation soapAction="http://www.ubernote.com/UserViewNodeRemove" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserViewNodeInsert">
+      <soap12:operation soapAction="http://www.ubernote.com/UserViewNodeInsert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="userAuthenticate">
+      <soap12:operation soapAction="http://www.ubernote.com/userAuthenticate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="userAccountAdd">
+      <soap12:operation soapAction="http://www.ubernote.com/userAccountAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserChangePassword">
+      <soap12:operation soapAction="http://www.ubernote.com/UserChangePassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserViewsGet">
+      <soap12:operation soapAction="http://www.ubernote.com/UserViewsGet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserViewRemove">
+      <soap12:operation soapAction="http://www.ubernote.com/UserViewRemove" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserViewAdd">
+      <soap12:operation soapAction="http://www.ubernote.com/UserViewAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="noteTypeAdd">
+      <soap12:operation soapAction="http://www.ubernote.com/noteTypeAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserCategoryRename">
+      <soap12:operation soapAction="http://www.ubernote.com/UserCategoryRename" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserCategoriesGet">
+      <soap12:operation soapAction="http://www.ubernote.com/UserCategoriesGet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserCategoryAdd">
+      <soap12:operation soapAction="http://www.ubernote.com/UserCategoryAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserCategoryRemove">
+      <soap12:operation soapAction="http://www.ubernote.com/UserCategoryRemove" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ping">
+      <soap12:operation soapAction="http://www.ubernote.com/ping" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FileUpload">
+      <soap12:operation soapAction="http://www.ubernote.com/FileUpload" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserCategoriesNotesGet">
+      <soap12:operation soapAction="http://www.ubernote.com/UserCategoriesNotesGet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceHttpPost" type="tns:ServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="NoteCategoryTag">
+      <http:operation location="/NoteCategoryTag" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="NoteCategoryUnTag">
+      <http:operation location="/NoteCategoryUnTag" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="NotesGetRecentlyUpdated">
+      <http:operation location="/NotesGetRecentlyUpdated" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NotesRevisionsGet">
+      <http:operation location="/NotesRevisionsGet" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NotesGetAll">
+      <http:operation location="/NotesGetAll" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NotesGetAllByUpdateDt">
+      <http:operation location="/NotesGetAllByUpdateDt" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NotesGetByViewNode">
+      <http:operation location="/NotesGetByViewNode" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoteSearch">
+      <http:operation location="/NoteSearch" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NotesGetTrashed">
+      <http:operation location="/NotesGetTrashed" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoteCategoriesGet">
+      <http:operation location="/NoteCategoriesGet" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoteTrash">
+      <http:operation location="/NoteTrash" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="NoteAdd">
+      <http:operation location="/NoteAdd" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoteSave">
+      <http:operation location="/NoteSave" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="NoteRename">
+      <http:operation location="/NoteRename" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="NoteUnTrash">
+      <http:operation location="/NoteUnTrash" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="NoteRemove">
+      <http:operation location="/NoteRemove" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="UserViewNodeAdd">
+      <http:operation location="/UserViewNodeAdd" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserViewNodesGet">
+      <http:operation location="/UserViewNodesGet" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserViewNodeRemove">
+      <http:operation location="/UserViewNodeRemove" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="UserViewNodeInsert">
+      <http:operation location="/UserViewNodeInsert" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="userAuthenticate">
+      <http:operation location="/userAuthenticate" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="userAccountAdd">
+      <http:operation location="/userAccountAdd" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserChangePassword">
+      <http:operation location="/UserChangePassword" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="UserViewsGet">
+      <http:operation location="/UserViewsGet" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserViewRemove">
+      <http:operation location="/UserViewRemove" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="UserViewAdd">
+      <http:operation location="/UserViewAdd" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="noteTypeAdd">
+      <http:operation location="/noteTypeAdd" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserCategoryRename">
+      <http:operation location="/UserCategoryRename" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="UserCategoriesGet">
+      <http:operation location="/UserCategoriesGet" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserCategoryAdd">
+      <http:operation location="/UserCategoryAdd" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserCategoryRemove">
+      <http:operation location="/UserCategoryRemove" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="ping">
+      <http:operation location="/ping" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="FileUpload">
+      <http:operation location="/FileUpload" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="UserCategoriesNotesGet">
+      <http:operation location="/UserCategoriesNotesGet" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://localhost:13787/Webservice/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://localhost:13787/Webservice/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceHttpPost" binding="tns:ServiceHttpPost">
+      <http:address location="http://localhost:13787/Webservice/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

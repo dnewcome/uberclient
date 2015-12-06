@@ -1,0 +1,54 @@
+<li class="note initializing clearfix">
+    <div class="NoteBar minimizehide">
+        
+		<div class="line">
+            <span class="noteDates">
+                {#_localStrings.CREATE_DATE_HEADER}<span class="elementCreateDate" _format="EXPANDINGDATE" ></span>
+                <span class="elementShareFrom">
+                    {<span class="elementShareOwner extrainfo" _type="username" _dataField="Share_Owner"></span>}
+                </span>
+                {#_localStrings.MODIFIED_DATE_HEADER}<span class="elementUpdateDate elementDate" _format="TODAYFUZZY" ></span>
+                <span class="elementUpdateUserContainer" >
+                    {<span class="elementUpdateUser extrainfo" _type="username" _dataField="Update_User"></span>}
+                </span>     
+            </span>
+            <img class="icon elementStar" src="images/1x1spacer.gif" title="{#_localStrings.IMPORTANT_STATUS}" alt="{#_localStrings.IMPORTANT_STATUS}" />
+            <h2 title="{#_localStrings.CLICK_TO_EDIT_TITLE}"  alt="{#_localStrings.CLICK_TO_EDIT_TITLE}" _type="title" _dataField="Title" _emptytext="{#_localStrings.EMPTY_TITLE_CONFIRM}" class="extrainfo elementTitle"></h2>
+        </div>
+		
+        <div class="line">  <!-- icon is a Mozilla fix to make sure the div is at least 18px high so the background covers the entire icon set -->
+            <div class="tags"></div>
+            <ul class="cornerControls">
+                <li><a href="#" title="{#_localStrings.DELETE}" alt="{#_localStrings.DELETE}" class="elementDelete">{#_localStrings.DELETE}</a></li>
+                <li><a href="#" title="{#_localStrings.TAG_MENU}" alt="{#_localStrings.TAG_MENU}" class="elementCategories">{#_localStrings.TAG}</a></li>
+                <li><a href="#" title="{#_localStrings.MOVE}" alt="{#_localStrings.MOVE}" class="elementFolders">{#_localStrings.MOVE}</a></li>
+                <li><a href="#" title="{#_localStrings.EMAIL_SHARE_NOTE}" alt="{#_localStrings.EMAIL_SHARE_NOTE}" class="elementShare">{#_localStrings.SHARE}</a></li>
+                <li><a href="#" title="{#_localStrings.ACTIONS_DESC}" alt="{#_localStrings.ACTIONS_DESC}" class="elementActions">{#_localStrings.ACTIONS}</a></li>
+            </ul>
+        </div>
+    </div> 
+    <div class="elementBody" ></div>
+    <!--div class="elementComments">
+        <div>
+            <img class="elementComment icon" src="images/1x1spacer.gif" class="icon" />
+            <span class="elementCommentsHeading">{#_localStrings.COMMENTS_HEADING}</span>
+            <span class="elementAddComment" >({#_localStrings.ADD_COMMENT})</span>
+        </div>
+		<div class="elementCommentListContainer"></div>
+		
+    </div-->
+    <div class="elementNoteShareInfo line">
+        <img class="elementSharing12x12 icon12x12" src="images/1x1spacer.gif" />
+        <span class="elementShareWith">
+            <span class="bold" >{#_localStrings.SHARED_WITH}</span><span class="elementShareWithHeader"></span>
+            <span class="elementShareWithNames"></span>
+        </span>
+        <span class="elementOthersShareWith">
+            <span class="bold" >{#_localStrings.OTHERS_SHARED_WITH}</span><span class="elementOthersShareWithNames"></span>
+        </span>
+    </div>
+    <div class="elementAttachments line">
+        <img class="elementAttachment12x12 icon12x12" src="images/1x1spacer.gif" />
+        <span class="bold" >{#_localStrings.ATTACHMENTS}</span><span class="elementAttachmentsNames"></span>
+    </div>
+</li>

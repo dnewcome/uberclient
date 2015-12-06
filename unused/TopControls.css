@@ -1,0 +1,66 @@
+﻿#topControls {
+	background-color: white;
+	/*border-bottom: solid 4px white;
+	padding: 5;*/
+}
+
+#topControls span {
+	color: #A8D6E0;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 1.75ex; 
+	padding: 0 0 0 0;	
+	cursor: pointer;
+    cursor: hand;
+}
+#topControls a:link {
+	color: #A8D6E0;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 2ex; 
+	padding: 0 0 0 0;	
+    text-decoration: none;
+	cursor: pointer;
+    cursor: hand;
+}
+#topControls a:visited {
+	color: #A8D6E0;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 2ex; 
+	padding: 0 0 0 0;	
+	text-decoration: none;
+	cursor: pointer;
+    cursor: hand;
+}
+#topControls a:hover {
+	color: #A8D6E0;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 2ex;
+	padding: 0 0 0 0;	
+	text-decoration: none;
+	cursor: pointer;
+    cursor: hand;
+}
+
+#topControls .logo 
+{
+    float: clear;
+    width: 150px;
+    
+}
+
+#topControls .newnote
+{
+    position:absolute;      
+    top: 38px;              
+}
+
+#topControls .settings
+{
+    position:absolute;      /* All browsers */
+    top: 38px;              /* Standards  browsers */
+    right: 0;               /* All except IE */
+    
+}

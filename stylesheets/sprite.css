@@ -1,0 +1,88 @@
+/*.elementDelete, .elementTrash, */.elementRevisions, /*.elementUntrash, */.elementStar, .elementPrint img, .elementEmail, 
+/*.elementCategories, */.elementMinimize, .elementMaximize, .elementActionIcon,
+.elementDownButton, 
+.elementMenuOpen, .elementDragElement, .selected .viewNodeCategory, #MainLogo, .elementCloseButton,
+.ubersprite, .elementPublic, .elementHidden, /*.elementActions, */.elementSharing, .elementSharing12x12,
+.elementShareWrite, .elementShareRead, .elementShareComment, .elementShareRemove, .elementShareEdit, .dashboardImportant, .dashboardChecked,
+.dashboardNews, .elementExternal, .dashboardAdded, .dashboardUpdated, .elementCategories12x12,
+.elementStar12x12, .elementCheck12x12, .elementUncheck12x12, .elementPartialCheck12x12, .checkbox img, 
+.categorySelectionImage, .menuSelectedImage, .comment_arrow, .elementAttachment12x12, 
+.dashboardCheck13x13, .elementShareOwner12x12, .elementComment, a.elementUncheck span.elementUncheck,
+a.elementPageLink span.elementPageLink
+{ background: url(../images/ubersprite.gif) no-repeat top left; }
+
+
+.sprite-attach { background-position: 0 -30px; } 
+/*.elementTrash, .sprite-bin { background-position: 0 -76px; } */
+.note .elementRevisions { background-position: 0 -1284px; }
+.elementMenuOpen, .elementBack, .elementDownButton, .sprite-bullet_arrow_down { background-position: 0 -122px; } 
+.dashboardCheck13x13 { background-position: 0 -210px; } 
+.sprite-Check { background-position: 0 -260px; } 
+.dropdown .elementCloseButton { background-position: 0 -302px; } 
+.elementCloseButton, .sprite-cross12x12 { background-position: 0 -942px; } 
+.elementDelete, .sprite-cross { background-position: 0 -342px; } 
+.elementEmail, .sprite-email_go { background-position: 0 -385px; } 
+/*
+* .elementDisplayArrayContainer is added because .starred is added both 
+*   to a note and the view when we are in the starred (important) category.
+*   to get the star to show up only when we want it, make sure the starred is
+*   under the display array container.
+*/
+.elementDisplayArrayContainer .starred .elementStar, .standaloneeditor .starred .elementStar, 
+.public .elementPublic, .hidden .elementHidden, .sprite-important { background-position: 0 -434px; }
+
+.elementMinimize, .sprite-minus { background-position: 0 -476px; } 
+.selected .viewNodeCategory, .sprite-notch { background-position: 0 -524px; } 
+.elementExternal { background-position: 0 -576px; } 
+.minimize .elementMinimize, .elementMaximize, .sprite-plus { background-position: 0 -620px; } 
+.elementPrint img, .sprite-printer { background-position: 0 -668px; } 
+.elementDisplayArrayContainer .starred .elementStar12x12, .showstar .elementStar12x12 { background-position: 0 -709px; } 
+.NewTagInput .elementActionIcon, .sprite-tag_blue_add { background-position: 0 -760px; } 
+.elementDragElement, .elementCategories, .sprite-tag_blue { background-position: 0 -804px; } 
+.elementCategories12x12 { background-position: 0 -1625px; } 
+.sprite-unCheck { background-position: 0 -852px; } 
+.elementStar, .sprite-unimportant, .elementPublic, .elementHidden { background-position: 0 -896px; } 
+.sprite-unstarred { background-position: 0 -940px; } 
+/*.elementUntrash, .sprite-untrash { background-position: 0 -988px; } */
+.MainControlSearchInput .elementActionIcon, .sprite-zoom { background-position: 0 -1032px; } 
+.elementSharing { background-position: 0 -1075px; }
+.elementActions { background-position: 0 -1125px; }
+.elementSharing12x12 { background-position: 0 -1175px; }
+#MainLogo, .sprite-uber-logo { background-position: 0 -1226px; width: 148px; height: 42px}
+.elementShareWrite {  background-position: 0 -1075px; }
+.elementShareRead {  background-position: 0 -1335px; }
+.elementShareRemove {  background-position: 0 -1433px; }
+.elementShareEdit {  background-position: 0 -1384px; }
+.dashboardImportant {  background-position: 0 -433px; }
+.dashboardChecked {  background-position: 0 -260px; }
+.dashboardNews {  background-position: 0 -1482px; } 
+.dashboardAdded { background-position: 0 -1528px; }
+.dashboardUpdated { background-position: 0 -1576px; }
+.elementStar12x12 { background-position: 0 -1659px; } 
+
+/* a.elementUncheck is used in the editor, it has a goofy
+    offset so that it looks centered in the button
+*/
+a.elementPageLink span.elementPageLink { background-position: 3 -1773px; }
+a.elementUncheck span.elementUncheck { background-position: 2 -148px; }
+.elementCheck12x12, .selected .checkbox img, .showcheck .checkbox, 
+.selected .categorySelectionImage, .selected .menuSelectedImage 
+{ background-position: 0 -1690px; }
+.elementUncheck12x12, .checkbox img, .categorySelectionImage, .menuSelectedImage
+{ background-position: 0 -1720px; }
+.elementPartialCheck12x12, .partial .checkbox img, .partial .categorySelectionImage 
+{ background-position: 0 -1750px; }
+
+.comment_arrow
+{
+    width: 32px;
+    height: 31px;
+    background-position: 0 -1900px; 
+}
+
+
+.elementAttachment12x12 { background-position: 0 -1810px; } 
+.elementShareOwner12x12 { background-position: 0 -1830px; }
+.elementComment, .elementShareComment { background-position: 0 -1860px; }
+
+

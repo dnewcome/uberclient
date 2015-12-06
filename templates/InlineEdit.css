@@ -1,0 +1,37 @@
+﻿.InputControl {
+    cursor: pointer;
+    cursor: hand;
+    display: inline-block;
+	font-weight: bold;
+	font-size: 1em;
+	overflow: hidden;
+}
+
+.InputControl, .InputControl input, .InputControl span
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.InputControl span
+{   /* Because of the size of the input, this is off center by one px. */
+    top: -1px;
+}
+
+.InputControl input {
+    background-color:#DDDDFF;
+    border:1px solid #6666FF;
+    width: 100%;
+}
+
+.editing span, .InputControl input
+{
+    display: none;
+}
+
+.editing input
+{
+    display: inline;
+}
+

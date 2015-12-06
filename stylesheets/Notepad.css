@@ -1,0 +1,288 @@
+﻿html {
+/*    width: 100%;
+    height: 100%;
+	overflow: hidden;
+	*/
+}
+
+a
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+body
+{   /* We put this here because in NoteText.css it 
+        kills the scroll bar in the editor too */
+  /*  overflow: hidden; /* kills scrollbar on rt side of window */
+}
+
+body.standaloneeditor
+{
+    overflow: auto;
+}
+
+
+
+input, textarea
+{
+    border: solid 1px gray;
+}
+
+input.focused, textarea.focused {
+    background-color:#DDDDFF;
+    border:1px solid #6666FF;
+}
+
+
+button {
+	background-color: transparent;
+	border: none;
+}
+
+#main 
+{
+    padding: 8px  190px 0 200px;
+}
+
+.premium #main
+{
+    padding-right: 0px;
+}
+
+.right-padding
+{
+    position: absolute; 
+    right: 5px; 
+    width: 180px;
+}
+
+.elementnotehelp
+{
+    height:1000px;
+    overflow:hidden;
+    border:none;
+}
+
+.premium .right-padding
+{
+    display: none;
+}
+
+
+#catpane {
+	width: 170px;   /* If we change the width or the left, we must alter the .noteside left. */
+	position: absolute;
+	margin-left: -180px;
+}
+
+#MainLogo
+{
+    margin-left:-5px;   /* it is 5px too wide */
+}
+/*
+#NoteAddButton {
+	/*background: -moz-linear-gradient(center top, #5cdb39 0%, #2e9c46 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #5cdb39), color-stop(1, #2e9c46));
+	filter: progid:DXImageTransform.Microsoft.gradient(StartColorStr='#5cdb39', EndColorStr='#2e9c46', GradientType='0');
+	-ms-filter:progid:DXImageTransform.Microsoft.gradient(StartColorStr='#5cdb39', EndColorStr='#2e9c46', GradientType='0');
+	*/
+	/*
+	background-color: #A8D6E0;
+	border: 1px solid #EEEEEE;
+    border-radius: 5px 5px 5px 5px;
+    color: black;
+	font-size: .9em;
+	font-weight: bold;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 20px;
+    padding: 0.75em;
+	text-align: center;
+}
+
+#NoteAddButton:hover {
+	text-decoration: underline;
+}*/
+
+
+/*#elementNewNote {
+	/*background: -moz-linear-gradient(center top, #5cdb39 0%, #2e9c46 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #5cdb39), color-stop(1, #2e9c46));
+	filter: progid:DXImageTransform.Microsoft.gradient(StartColorStr='#5cdb39', EndColorStr='#2e9c46', GradientType='0');
+	-ms-filter:progid:DXImageTransform.Microsoft.gradient(StartColorStr='#5cdb39', EndColorStr='#2e9c46', GradientType='0');
+	
+	background-color: #A8D6E0;
+	border: 1px solid #EEEEEE;
+    border-radius: 5px 5px 5px 5px;
+    color: black;
+	font-size: .9em;
+	font-weight: bold;
+    display: block;
+    text-decoration: none;
+    float: right; 
+    margin-bottom: 20px;
+    padding: 0.75em;
+	text-align: center;
+}*/
+
+
+#leftad {
+	width: 125px;
+	height: 166px;
+	border: 1px solid #888;
+	margin: 40px auto;
+}
+
+
+.noteside
+{
+    position: relative;
+	padding: 0 10px;
+}
+
+.ie .noteside
+{   /* IE needs this set or else it does not have it's hasLayout set 
+        and it has the double margin bug, and then the menus are all in
+        the wrong place, it's a mess.  but if we add this to the other
+        browsers and try to scroll the menus using the keyboard,  they
+        scroll around.
+    display: inline-block;
+    */
+}
+
+
+.hide, .ie div.hide
+{
+	display: none;
+}
+
+.icon
+{
+    width: 16px;
+	min-height: 16px;
+	height: 16px;
+	vertical-align: middle; 
+	background-repeat:no-repeat;
+}
+
+.icon12x12
+{
+    width: 12px;
+	min-height: 12px;
+	height: 12px;
+	line-height: 12px;
+	vertical-align: middle;
+	background-repeat:no-repeat;
+}
+
+/* Pulled these out of the icons classes themselves because they mess with opera */
+.ie6 .icon, .ie6 .icon12x12
+{
+	height: auto !important;  /* IE6 Fix */
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.externalSource
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+	bottom: 0;
+/*    padding-top: 29px;*/
+    background-color: #A8D6E0;
+}
+
+.ie .standaloneeditor .externalSource
+{
+    top: 6px;
+    
+}
+
+.fullapp .externalSource
+{   /* We put the 2px padding on the right or 
+    * else we don't get the border in W3C compatible browsers 
+    */
+    padding-right: 2px;
+}
+
+.externalSource > .header {
+	padding-left: 14px;
+}
+
+.externalSource > iframe
+{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+	border: 1px solid #808080;
+	border-width: 0 1px 1px 1px;
+    background-color: #fff;
+}
+
+.ie7 .externalSource > iframe {
+	height: 1000px;
+}
+
+.externalSource .elementCloseButton
+{
+    float: right;
+    margin-right: 7px;
+    margin-top: 6px;
+}
+
+.externalSource 
+{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 0 0 15px;
+}
+
+/* fix for shifted dashboard */
+.externalSource {
+    left: -5px;
+}
+
+/* fix for note text too close to edge */
+.mceContentBody {
+    padding: 10px;
+}
+.lightbox {
+	background: #eee;
+	border: 7px solid #A8D6E0;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	text-align: left;
+	-moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+	width: 600px;
+}
+
+.lightbox > .header {
+	padding: .2em;
+	background:#A8D6E0;
+}
+
+.lightbox > .header > h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+	display: inline;
+}
+
+.lightbox > .header > .elementCloseButton {
+	float: right;
+	margin: 3px;
+}
+
+.lightbox > iframe {
+	background: #fff;
+	width: 600px;
+	height: 500px;
+}

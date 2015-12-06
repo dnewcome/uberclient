@@ -1,0 +1,98 @@
+﻿#topStatus {
+	display: block;
+	background-color: #000;
+	color: #fff;	
+	padding: 0 20px;
+	border-bottom: solid 2px #808080;
+/*	height: 35px;*/
+	line-height: 35px;
+	-moz-box-shadow: 0 2px 3px #777;
+	-webkit-box-shadow: 0 2px 3px #777;
+	box-shadow: 0 2px 3px #777;
+}
+
+#mainlogo {	
+	float: left;
+	margin-right: 30px;
+}
+
+#topStatus > fieldset, #topStatus > nav {
+	display: inline;
+}
+
+#topStatus > nav {
+	float: right;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+#topStatus > nav > ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+
+#topStatus > nav > ul > li {
+	display: inline;
+}
+
+#topStatus .user, #topStatus .usertext, #topStatus .leftlink, 
+#topStatus  a:link, #topStatus a:visited, #topStatus a:hover {
+    color: white;
+/*	font-weight:bold;
+/*	font-size: 11px; 
+	padding: 0 0 0 0;	
+	*/
+	cursor: pointer;
+    cursor: hand;
+    text-decoration: underline;
+}
+
+
+.iconbutton
+{
+    position:relative;
+    top: 10px; 
+}
+
+#topStatus input[type=text] {
+	border: none;
+	width: 275px;
+	background: no-repeat scroll 267px center white;
+	outline:none;
+	font-size:1.25em;
+}
+
+#topStatus input[type=text].focused {
+	border: none;
+}
+
+
+.boxit 
+{
+    border: none;
+	width: 295px;
+	padding: .5em .5em .5em;
+	-moz-box-shadow: 0 0 2px #000 inset;
+	-webkit-box-shadow: 0 0 2px #000 inset;
+	box-shadow: 0 0 2px #000 inset;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background: no-repeat scroll 295px center white;
+
+	
+}
+
+#topStatus input.elementSearchButton {
+	width: 25px;
+	height:30px;
+	text-decoration: none;
+	border:none;
+	background: url("../images/1x1spacer.gif") no-repeat scroll top;
+	position:relative;
+    top:-5px;
+    text-shadow: none;
+    
+}

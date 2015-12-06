@@ -1,0 +1,16 @@
+﻿
+.NoteBar .EditButtons
+{
+    display: none;
+}
+
+.note.focused .EditButtons
+{
+    display: inline;
+    float: left;
+}
+
+.note.trash .EditButtons
+{
+    display: none;
+}

@@ -1,0 +1,178 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{626BEA4F-2CBC-43C6-9169-DCF390F99F39}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Client", "http://localhost:82/ubernote/Client", "{FC362B03-96CC-4C00-A24C-D86B2A03AE7D}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/Client"
+		Debug.AspNetCompiler.PhysicalPath = "..\Client\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Client\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Client"
+		Release.AspNetCompiler.PhysicalPath = "..\Client\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Client\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\Client\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Webservice", "http://localhost:82/ubernote/Services/Webservice", "{ECDA2B62-4936-4B33-A54F-85712D5C5B4A}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/Webservice"
+		Debug.AspNetCompiler.PhysicalPath = "..\Services\Webservice\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Webservice\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Webservice"
+		Release.AspNetCompiler.PhysicalPath = "..\Services\Webservice\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Webservice\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\Services\Webservice\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "webtools", "http://localhost:82/Ubernote/webtools", "{43159B6C-AB45-4981-8192-549762D95CBE}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/webtools"
+		Debug.AspNetCompiler.PhysicalPath = "..\webtools\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\webtools\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/webtools"
+		Release.AspNetCompiler.PhysicalPath = "..\webtools\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\webtools\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\webtools\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "UserSites", "http://localhost:82/Ubernote/UserSites", "{3EEF537F-C5E6-4F9F-8D73-53D264639D8B}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/usersites"
+		Debug.AspNetCompiler.PhysicalPath = "..\usersites\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\usersites\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/usersites"
+		Release.AspNetCompiler.PhysicalPath = "..\usersites\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\usersites\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\UserSites\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "pages", "http://localhost:82/pages", "{611C8018-7F01-49C9-98BD-E88BF2B487EF}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/pages"
+		Debug.AspNetCompiler.PhysicalPath = "..\pages\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\pages\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/pages"
+		Release.AspNetCompiler.PhysicalPath = "..\pages\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\pages\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\pages\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ClientPages", "http://localhost:82/ClientPages", "{048A8148-76B6-4743-B9BB-6FC01A2E0D14}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/ClientPages"
+		Debug.AspNetCompiler.PhysicalPath = "..\ClientPages\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\ClientPages\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/ClientPages"
+		Release.AspNetCompiler.PhysicalPath = "..\ClientPages\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\ClientPages\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\ClientPages\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "stripe", "http://localhost:82/stripe", "{4EC4DAD5-E2F4-42E9-95C8-F766169C3785}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/stripe"
+		Debug.AspNetCompiler.PhysicalPath = "..\stripe\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\stripe\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/stripe"
+		Release.AspNetCompiler.PhysicalPath = "..\stripe\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\stripe\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\stripe\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC362B03-96CC-4C00-A24C-D86B2A03AE7D}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{FC362B03-96CC-4C00-A24C-D86B2A03AE7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC362B03-96CC-4C00-A24C-D86B2A03AE7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECDA2B62-4936-4B33-A54F-85712D5C5B4A}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{ECDA2B62-4936-4B33-A54F-85712D5C5B4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECDA2B62-4936-4B33-A54F-85712D5C5B4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43159B6C-AB45-4981-8192-549762D95CBE}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{43159B6C-AB45-4981-8192-549762D95CBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43159B6C-AB45-4981-8192-549762D95CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EEF537F-C5E6-4F9F-8D73-53D264639D8B}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{3EEF537F-C5E6-4F9F-8D73-53D264639D8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EEF537F-C5E6-4F9F-8D73-53D264639D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{611C8018-7F01-49C9-98BD-E88BF2B487EF}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{611C8018-7F01-49C9-98BD-E88BF2B487EF}.Debug|.NET.Build.0 = Debug|Any CPU
+		{611C8018-7F01-49C9-98BD-E88BF2B487EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{611C8018-7F01-49C9-98BD-E88BF2B487EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{048A8148-76B6-4743-B9BB-6FC01A2E0D14}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{048A8148-76B6-4743-B9BB-6FC01A2E0D14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{048A8148-76B6-4743-B9BB-6FC01A2E0D14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EC4DAD5-E2F4-42E9-95C8-F766169C3785}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{4EC4DAD5-E2F4-42E9-95C8-F766169C3785}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EC4DAD5-E2F4-42E9-95C8-F766169C3785}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,615 @@
+﻿.clearfix:after, .container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
+.clearfix, .container {display:block;}
+.clear {clear:both;}
+
+.note 
+{
+    background-color: #A8D6E0;
+	padding: 0 2px 2px;
+	margin: 0;
+	clear: both;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+
+.ie .notepopup
+{	/* ie takes up the entire width of the screen unless we give it a width. */
+    width: 400px;
+    overflow-x: auto;
+}
+
+.expandedviewcontainer .note {
+	margin: 10px 0 0 0; 
+}
+
+.expandedviewcontainer .note:first-child {
+	margin-top: 0;
+}
+
+.clearer
+{
+    clear: both;
+}
+
+.read, .trash
+{
+    background-color: #CCCCCC;
+}
+/*
+.ie .note
+{
+    display: inline-block;
+}
+*/
+div.elementBody
+{
+    overflow: auto;
+    width: 100%;
+    background-color: #FFFFFF; 
+    position: relative;
+    clear: both;
+}
+
+.note .mceEditor, .note .mceLayout, .note iframe
+{
+    width: 100%;
+    clear: both;
+}
+
+/*.trash .elementTrash, .trash .elementCategories, .elementUnTrash, .elementDelete, */.elementTagsWrapper, .PageSelection, 
+.NumberListContainer, .PageSelectionBottom, .singlenote div.PageSelectionBottom, /*.noteside .elementHeader, */
+.hasnotes .elementNoNotesMessage, .trash .elementSharing, 
+.sharedwithme .elementSharing, .elementShareFrom, .elementNoteShareInfo, .elementShareWith, 
+.elementSortOrderContainer, .elementUpdateUserContainer, .elementAttachments, .elementOthersShareWith, 
+.elementAttachmentsSeparator, .standaloneeditor .elementExternal, .minimize .noteshareinfo, 
+.tagsindicator, .elementMaximize, .maximize img.elementMaximize, 
+.elementSharing12x12, .maximize img.elementSharing12x12,
+.elementAttachment12x12, .maximize img.elementAttachment12x12,
+.notelistdisplay .elementCategories12x12, .maximize img.elementCategories12x12,
+.elementTagsInfo, .historyavailable span.elementView, .nonotes span.elementView, 
+.noteside .elementBack, .elementShareOwnerContainer, .elementShareOwner12x12,
+.listview .sharedwithme .elementSharing12x12, .singlenoteview div.PageSelectionBottom,
+.elementCommentMenu, .elementMoreCommentsButton, .elementLessCommentsButton, 
+.sharedwithme .elementEmail
+{
+    display: none;
+}
+	
+.hasnotes .PageSelectionBottom, .sharedbyme .elementNoteShareInfo, 
+.othersharenames .elementNoteShareInfo, .attachments .elementAttachments, 
+.usercategories .elementTagsInfo, .sharedwithme .elementShareOwnerContainer
+{
+    display:block;
+}
+
+/*.trash .elementDelete, .trash .elementUnTrash, */.NoteTagged .elementTagsWrapper, .hasmessage .elementHeader,
+.elementNoNotesMessage, .sharedwithme .elementShareFrom, .sharedbyme .elementShareWith, 
+.sortorderenabled .elementSortOrderContainer, .sharedbyme .elementUpdateUserContainer, 
+.sharedwithme .elementUpdateUserContainer, .othersharenames .elementAttachmentsSeparator, 
+.othersharenames .elementOthersShareWith, .usercategories .tagsindicator, 
+.sharedbyme .elementMaximize, .othersharenames .elementMaximize, .attachments .elementMaximize,
+.sharedbyme .elementSharing12x12, .sharedwithme .elementShareOwner12x12, .othersharenames .elementSharing12x12, 
+.attachments .elementAttachment12x12, .usercategories .elementCategories12x12,
+.noteside .elementView, .historyavailable .elementBack, .multiplepages .NumberListContainer, 
+.hasnotes .PageSelection, .commentowner .elementCommentMenu, .noteowner .elementCommentMenu,
+.lesscomments .elementLessCommentsButton, .morecomments  .elementMoreCommentsButton
+{
+    display: inline;
+}
+
+/**
+* Override previous displays
+*/
+
+
+.notelistdisplay {
+    margin: 0;
+    cursor: pointer; 
+	line-height: 1.5em;
+	display: block;
+	padding: 5px;
+	background: transparent;
+	border-bottom: 1px solid #eee;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+/*
+.notelistdisplay:first-child {
+	border-width: 1px;
+}
+*/
+/*
+.notelistdisplay > a {
+	color: #000;
+	text-decoration: none;
+}
+*/
+.ie7 .notelistdisplay {
+	display: inline-block;
+}
+
+
+/*
+.ie7 .notelistdisplay > div {
+	display: inline-block;
+}
+.ie7 .notelistdisplay {
+	display: block;
+}
+*/
+/*
+.ie7 .notelistdisplay > a {
+	display: inline-block;
+}
+*/
+.notelistdisplay:hover {
+	-moz-box-shadow: inset 0 0 4px #0084B4;
+	-webkit-box-shadow: inset 0 0 4px #0084B4;
+	box-shadow: 0 0 4px #000;
+}
+
+.no-boxshadow .notelistdisplay {
+	border: 1px solid #fff;
+	border-color: #fff #fff #ccc #fff;
+}
+
+.no-boxshadow .notelistdisplay:hover {
+	border: 1px solid #ccc;
+}
+
+.notelistdisplay.hide {
+	display: none;
+}
+
+.notelistdisplay > .header {
+	/*background: #A8D6E0;*/
+	padding: 0;
+}
+
+.notelistdisplay > .contents {
+	padding: 0 0 0 26px;
+	background: #fff;
+}
+
+.notelistdisplay .elementTitle {
+	font-weight: bold;
+}
+
+/*
+.listview .striped
+{
+    background-color: #DEF3FF;
+}
+
+/*
+.listview .striped:hover, .listview .notelistdisplay:hover
+{
+    background-color: #DEF3FF;   
+}
+*/
+/*
+.listview .selected
+{
+    border-bottom: 1px solid #90B4CF;
+    background-color: #A8D6E0;
+}
+/*
+.notelistdisplay .notelistdisplaystatus
+{
+    position: absolute;
+    left: 10px;
+}
+*/
+.notelistdisplay .date
+{
+    float: right;
+/*    margin-right: -85px;
+    width: 85px;   /* Have to give it a width or else IE craps out *//*
+    display: inline;    /* We have to say display inline or else IE6 doubles the margin */
+}
+
+.notelistdisplay .elementCreateDate, .notelistdisplay .elementUpdateDate
+{
+    text-align: right;
+    float: right;
+}
+
+/*
+.notelistdisplay .centerarea
+{
+   width: 100%;
+   white-space: nowrap; /* nowrap normal *//*
+   overflow: hidden;
+   font-weight:bold;
+}
+*/
+/*
+.notelistdisplay > .contents {
+	padding-right: 150px;
+}
+*/
+.notelistdisplay > .contents > .elementSummary
+{
+    font-weight:normal;
+    color: #777777;
+	min-height: 1.4em;
+	/*float: left;*/
+}
+
+.elementCreateDate, .elementShareFrom/*, .listview .noteDates*/
+{
+	margin-right:5px;
+}
+
+/*.noteside .elementHeaderContainer, */.NoteBar .tags /*, .elementMoreCommentsButton*/
+{
+    float: left;
+}
+
+.elementExternal, .noteDates, .NoteBar .cornerControls span
+{
+	float: right;
+}
+
+.noteDates, .notelistdisplay .elementCreateDate, .notelistdisplay .elementUpdateDate, .notelistdisplay .elementOwnerName
+{
+	font-size: 0.7em;
+}
+
+.noteDates .dirty, .noteDates .recentsave,/* .elementHeaderContainer .elementSortOrder,
+.elementHeaderContainer .elementSortOrder, *//*.elementCommentsHeading*/
+{
+    font-weight: bold;
+}
+
+.noteDates .recentsave
+{
+    color: green;
+}
+
+
+.NoteBar {
+    padding: 3px 7px;
+}
+
+.NoteBar .cornerControls {
+	/*position: relative;
+	top: 0px;
+	right: 1px;
+	width: 455px;*/
+	list-style: none;
+	float: right;
+	padding: 0;
+	margin: 0;
+}
+.NoteBar .cornerControls > li {
+	display: inline;
+	padding: 0 0 0 15px;
+}
+/*
+.ie .NoteBar .cornerControls 
+{
+    right: -2px;
+}
+*/
+.NoteBar .cornerControls span {
+    margin-right: 7px;
+}
+
+.NoteBar .cornerControls span .icon 
+{
+    margin-right: 1px;
+}
+
+/**
+* in gecko3.1, the icons are shifted too far down so we have to 
+*   set the height to get them to center properly.
+.gecko31 .NoteBar .cornerControls span .icon 
+{
+    height: 22px;
+}
+*/
+
+.NoteBar .tags {
+	font-size: .85em;
+	font-style: italic;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+} 
+
+.tag {
+	display: inline;
+	/*font-weight: normal;
+	padding-left: 3px;
+    cursor: pointer;
+    cursor: hand;
+	*/
+}
+
+.tag:before {
+	content: ", ";
+}
+
+.tag:first-child:before {
+	content: "";
+}
+
+/*
+.tag  .elementMenuOpen  {
+	visibility: hidden;
+}
+*/
+/*
+.btnMouseOverTrans  .elementMenuOpen {
+	visibility: visible;
+}
+*/
+.disabled .tag, .elementOthersShareWithNames .tag, .elementShareWithNames .tag
+{
+    cursor: default;
+}
+
+.line 
+{
+	line-height: 1.5em;
+	min-height: 1.2em;
+	clear: both;
+}
+
+.NoteBar .elementTitle 
+{
+    font-weight: bold;
+    margin-left: 10px;
+	display: inline;
+}
+
+/*
+.noteside .elementHeaderContainer
+{
+    padding: 0 9px;
+    background-color: #A8D6E0;
+    -moz-border-radius-topleft: 7px;	
+    -webkit-border-top-left-radius: 7px;    
+    -moz-border-radius-topright: 7px;	
+    -webkit-border-top-right-radius: 7px;    
+    margin-right: 4px;
+}
+.elementVerticalSeparator
+{
+    margin: 0px 5px;
+}
+*/
+
+/*
+.ie .elementShareFrom, .ie .elementShareWith
+{
+    margin-right: 5px
+}
+*/
+.note .elementSharing12x12, .note .elementAttachment12x12, .note .elementCategories12x12,
+.note .elementShareOwner12x12
+{
+     vertical-align: inherit;
+}
+
+.notepopup .elementSharing12x12, .notepopup .elementAttachment12x12, .notepopup .elementCategories12x12,
+.notepopup .elementShareOwner12x12
+{
+     margin-left: 2px;
+}
+
+.notepopup .elementShareOwner
+{
+    margin-right: 7px;
+}
+/*
+.ie .note .elementSharing12x12, .ie .note .elementShareOwner12x12
+{
+    vertical-align: middle;
+}
+*/
+.showWhenFocused { 
+	display: none;	
+}
+
+.focused .showWhenFocused {
+	 display: block; 
+}
+
+/**
+* this makes the container of the row dissappear.  If we are read-only or in
+*   the trash, we don't even want to see the buttons.
+*/
+.trash tr.mceFirst, .read tr.mceFirst {
+    display: none;
+}
+
+.noteside .elementView, .elementSortOrderContainer, .elementBack
+{
+    float: right;
+}
+
+.note .important
+{
+/*	position: absolute;*/
+/*	top: 5px;
+	left: 13px;
+	*/
+	margin: 0 10px 0 0;
+	/*float: left;*/
+}
+
+.ie7 .note .important {
+	margin-top: 3px;
+	float: left;
+}
+/*
+.note .checkbox
+{   /* We are making the checkbox area intentionally big so our "click zone" is larger than the icon */
+/*
+    width:14px;     
+    padding-left:7px;
+}
+
+.ie .note .checkbox
+{
+    margin-right:2px;
+    height: 23px;
+}
+.note .icon12x12
+{
+    margin-top:2px;
+}
+
+/*.note .checkbox img, *//*.note .important img
+{
+    margin-top:4px;
+}
+.note .popuphoverarea img
+{
+    margin-right: 2px;
+}
+*/
+
+.PageSelectionBottom
+{   /* Float this right so the user doesn't have to move the mouse so far */
+    float: right;
+    margin-right: 11px;
+}
+
+.expanded .PageSelectionBottom
+{   /* line up with the right margin of the expanded note */
+    margin-right: 3px;
+}
+
+.notelistdisplay .elementUpdateDate, .UPDATEDT_NEWFIRST .notelistdisplay .elementCreateDate, .UPDATEDT_OLDFIRST .notelistdisplay .elementCreateDate
+{
+    display: none;
+}
+
+.UPDATEDT_NEWFIRST .notelistdisplay .elementUpdateDate, .UPDATEDT_OLDFIRST .notelistdisplay .elementUpdateDate
+{
+    display: inline;
+}
+/*
+.elementAddComment 
+{
+	margin-left:25px;
+}
+
+.elementAddComment, .elementMoreCommentsButton, .elementLessCommentsButton
+{
+	font-size:85%;
+	text-decoration: underline;
+}
+/*
+.notecomment
+{
+	font-size: 85%;
+	margin: 0px 0px 5px 18px;
+	border: 1px solid gray;
+	padding: 5px;
+	width: 500px;
+	background-color: #ffdd99;
+ /*    -webkit-box-shadow: 2px 2px 5px #111;
+    box-shadow: 2px 2px 5px #111;  
+    
+}
+
+.commentowner
+{
+	background-color: #ffffaa;
+}
+
+.usercolor1
+{
+    background-color: #ffffaa;
+}
+
+.usercolor2
+{
+    background-color: #ffdd99;
+}
+
+.usercolor3
+{
+    background-color: #9aca32;
+}
+
+.usercolor4
+{
+    background-color: #ff7f50;
+}
+
+.usercolor5
+{
+    background-color: #adff2d;
+}
+
+.usercolor6
+{
+    background-color: #deb887;
+}
+*//*
+.notecomment .comment
+{
+	margin-left: 25px;
+}
+
+.notecomment .name, .notecomment .date
+{
+	font-style: italic;
+}
+/*
+.elementCommentsHeading
+{
+    margin-left: 2px;
+}
+*/
+.elementShareWith
+{
+    margin-left: 6px;
+}
+
+.notelistdisplay .title {
+	font-weight: bold;
+	font-size: 12pt;
+	color: #333;
+	display: inline-block;
+}
+
+.notelistdisplay .noteactions {
+	/*display: none;*/
+	visibility: hidden;
+	float: right;
+	list-style: none;
+	line-height: 12pt;
+	margin: 0;
+	padding: 0;
+}
+
+.notelistdisplay:hover .noteactions {
+	/*display: block;*/
+	visibility: visible;
+}
+
+.noteactions > li {
+	display: inline;
+	margin-left: 15px;
+}
+
+
+.noteactions > li > a {
+	font-size: .85em;
+	text-decoration: none;
+	background-image: none;
+}
+
+.noteactions li a:hover {
+	text-decoration: underline;
+	background: none;
+}
+

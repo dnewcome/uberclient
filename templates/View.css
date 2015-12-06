@@ -1,0 +1,23 @@
+﻿
+.elementViewsPane
+{
+    padding-bottom: 27px;
+    overflow: hidden;
+}
+
+.elementTagsViewPort
+{
+    height: 100%;
+    overflow: auto;
+    margin-bottom: 2px;
+    /* We do this so the menu items have something to base their offsetTop from
+    * that is not a relatively positioned element higher up the chain
+    */
+    position: relative;
+}
+
+.ie .elementTagsViewPort
+{   /* If we change the width of the left side, this must change too. */
+	width: 100%;
+    /* width: 139px; */
+}

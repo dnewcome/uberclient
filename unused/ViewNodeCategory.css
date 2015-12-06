@@ -1,0 +1,39 @@
+﻿/**
+* view style: view node 
+*/
+
+.userViewNode .elementName 
+{
+    text-decoration: underline;
+}
+.elementDragElement
+{
+	display: none;
+}
+
+.elementAttachTag 
+{
+	vertical-align: middle;
+}
+
+.elementCount
+{
+ 
+}
+
+
+.userAttachTagDrag {
+    position: absolute; 
+}
+
+.viewNodeCategory 
+{
+    text-decoration: underline;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-family: Arial;
+	font-size: 13px;
+	color: black;
+}
+
+

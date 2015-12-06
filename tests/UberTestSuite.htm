@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Ubernote Automated Test Suite</title>
+    <script type="text/javascript">
+    var aTests = [
+		"AdDisplayTest",
+		"AttachmentTagMenuTest",
+		"AutoCompletePluginTest",
+		"BatchPlugin",
+		"BindingDisplayCommentPluginTest",
+		"CommentsListTest",
+		"ConnectionResponseHandlerTest",
+		"ContactsTest",
+		"DateFormatTest",
+		"ExtraInfoDataPluginTest",
+		"ExternalSourceIframeTest",
+        "FormatterStringTest",
+		"HashArrayTest",
+		"IDGeneratorTest",
+		"KeyListenerPluginTest",
+		"ListClassnamePluginTest",
+		"ListCollapsePluginTest",
+		"ListDisplayTest",
+		"ListIteratorPluginTest",
+		"ListResizePluginTest",
+		"ListSelectionPluginTest",
+		"MessageTest",
+        "MetaTagsDropdownMenuPluginTest",
+		"MetaTagsDropdownNewTagListPluginTest",
+		"MetaTagsDropdownRequestBuilderPluginTest",
+		"MetaTagTitlePluginTest",
+		"MtoNofXCountPluginTest",
+		"NoteAddCommentPopupDisplayTest",
+		"NoteDisplayCollectionMenuCommandsTest",
+		"NoteDisplayCollectionPluginCommandsTest",
+		"NoteDisplayCollectionPluginTagsDropdownTest",
+		"NoteLinkOpenPluginTest",
+		"Notes",
+		"NotesPagingTest",
+		"NotesPagingPluginPagingTest",
+		"NotesPagingPluginSingleNoteViewTest",
+		"NotesPagingPluginSortOrderTest",
+		"NoteTest",
+		"NoteTagsDropdownPluginTest",
+		"PluginTest",
+		"PopupPluginTest",
+		"SharesTest",
+		"TextInputPluginTest"
+        "URITransformsTest",
+    ];
+
+    document.write( '<ul>' );
+    document.write( '<li><a href="#" onclick="runAll();"><b>All Tests</b></a></li>' );
+    for( var nIndex = 0, strTest; strTest = aTests[ nIndex ]; ++nIndex )
+    {   // create the file names
+        document.write( '<li><a href="' + strTest + '.htm" >' + strTest + '</a></li>' );
+    } // end for
+    document.write( '</ul>' );
+
+    function runAll()
+    {
+        var aTestFiles = [];
+        for( var nIndex = 0, strTest; strTest = aTests[ nIndex ]; ++nIndex )
+        {   // create the file names
+            aTestFiles.push( strTest + '.htm' );
+        } // end for
+
+        if (fireunit.forceHttp())
+        {
+            fireunit.runTests.apply( fireunit, aTestFiles );
+        } // end if
+    }    
+    </script>
+</head>
+<body>
+
+</body>
+</html>

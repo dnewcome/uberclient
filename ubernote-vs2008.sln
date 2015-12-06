@@ -1,0 +1,103 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{626BEA4F-2CBC-43C6-9169-DCF390F99F39}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Client", "http://localhost/ubernote/Client", "{FC362B03-96CC-4C00-A24C-D86B2A03AE7D}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "2.0"
+		Debug.AspNetCompiler.VirtualPath = "/Client"
+		Debug.AspNetCompiler.PhysicalPath = "..\Client\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Client\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Client"
+		Release.AspNetCompiler.PhysicalPath = "..\Client\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Client\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\Client\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Webservice", "http://localhost/ubernote/Services/Webservice", "{ECDA2B62-4936-4B33-A54F-85712D5C5B4A}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "2.0"
+		Debug.AspNetCompiler.VirtualPath = "/Webservice"
+		Debug.AspNetCompiler.PhysicalPath = "..\Services\Webservice\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Webservice\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Webservice"
+		Release.AspNetCompiler.PhysicalPath = "..\Services\Webservice\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Webservice\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\Services\Webservice\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "pages", "http://localhost/Ubernote/pages", "{708066BB-4C75-4FD9-A256-DC89013F175E}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "2.0"
+		Debug.AspNetCompiler.VirtualPath = "/pages"
+		Debug.AspNetCompiler.PhysicalPath = "..\pages\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\pages\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/pages"
+		Release.AspNetCompiler.PhysicalPath = "..\pages\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\pages\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\pages\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "webtools", "http://localhost/Ubernote/webtools", "{43159B6C-AB45-4981-8192-549762D95CBE}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "2.0"
+		Debug.AspNetCompiler.VirtualPath = "/webtools"
+		Debug.AspNetCompiler.PhysicalPath = "..\webtools\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\webtools\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/webtools"
+		Release.AspNetCompiler.PhysicalPath = "..\webtools\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\webtools\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\webtools\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC362B03-96CC-4C00-A24C-D86B2A03AE7D}.Debug|.NET.ActiveCfg = Debug|.NET
+		{FC362B03-96CC-4C00-A24C-D86B2A03AE7D}.Debug|.NET.Build.0 = Debug|.NET
+		{ECDA2B62-4936-4B33-A54F-85712D5C5B4A}.Debug|.NET.ActiveCfg = Debug|.NET
+		{ECDA2B62-4936-4B33-A54F-85712D5C5B4A}.Debug|.NET.Build.0 = Debug|.NET
+		{708066BB-4C75-4FD9-A256-DC89013F175E}.Debug|.NET.ActiveCfg = Debug|.NET
+		{708066BB-4C75-4FD9-A256-DC89013F175E}.Debug|.NET.Build.0 = Debug|.NET
+		{43159B6C-AB45-4981-8192-549762D95CBE}.Debug|.NET.ActiveCfg = Debug|.NET
+		{43159B6C-AB45-4981-8192-549762D95CBE}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

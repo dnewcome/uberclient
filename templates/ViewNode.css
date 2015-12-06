@@ -1,0 +1,17 @@
+﻿.viewNodeCategory 
+{
+    text-decoration: underline;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-size: 13px;
+	color: black;
+    overflow: hidden;   /* The overflow keeps us from showing a scroll bar for a wide tag, */
+    width: 100%;        /*  the white-space: nowrap keeps us from wrapping a wide tag */
+    white-space: nowrap;
+}
+
+.selected .viewNodeCategory
+{
+    padding-left: 15px;
+}
+

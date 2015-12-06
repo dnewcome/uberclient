@@ -1,0 +1,12 @@
+﻿.splitter {
+	/*cursor: e-resize;*/
+	width: 5px
+}
+
+.splitter .shadow {
+/*	height: 100%;*/
+	display: none;
+	width: 100%;
+	position: absolute;
+	background-image: url(../images/shadow.png)
+}

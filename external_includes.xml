@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<head>
+  <displays>
+    <development>
+      <file src="Display.js" />
+      <file src="DisplayAltConfig.js" />
+      <file src="NoteDisplay.js" />
+      <file src="NoteEditor.js" />
+      <file src="ViewPlugin.js" />
+      <file src="TextInputPlugin.js" />
+      <file src="MainControl.js" />
+      <file src="MetaTagDisplay.js" />
+      <file src="NotesPaging.js" />
+      <file src="CollapsingNumberListPlugin.js" />
+      <file src="ListDisplay.js" />
+      <file src="ListClassnamePlugin.js" />
+      <file src="ListCollapsePlugin.js" />
+      <file src="ListMouseEventPlugin.js" />
+      <file src="ListHighlightPlugin.js" />
+      <file src="ListIteratorPlugin.js" />
+      <file src="ListResizePlugin.js" />
+      <file src="ListSelectionPlugin.js" />
+      <file src="ListMenuPlugin.js" />
+      <!--file src="ListDragReceiverPlugin.js" /-->
+      <file src="NoteDisplayCollection.js" />
+      <file src="NoteDisplayCollectionPluginCommands.js" />
+      <file src="NoteDisplayCollectionPluginTagsDropdown.js" />
+      <file src="NoteDisplayCollectionMenuCommands.js" />
+      <file src="NoteDisplayCollectionFactory.js" />
+      <file src="HTMLDisplay.js" />
+      <file src="NoteTinyMCE.js" />
+      <file src="NoteTextFactory.js" />
+      <file src="NoteDisplayFactory.js" />
+      <file src="MetaTagsList.js" />
+      <!--file src="MetaTagsDropdownMenuPlugin.js" />
+      <file src="MetaTagsDropdownRequestBuilderPlugin.js" />
+      <file src="MetaTagsDropdownNewTagListPlugin.js" /-->
+      <file src="BindingsList.js" />
+      <file src="BindingDisplay.js" />
+      <file src="NoteMenuActions.js" />
+      <file src="NoteMenuShares.js" />
+      <!--file src="NewNoteMenu.js" /-->
+      <file src="TagMenu.js" />
+      <file src="NoteDisplayPlugins/NoteActionsPlugin.js" />
+      <file src="NoteDisplayPlugins/NoteShareInfoPlugin.js" />
+      <file src="NoteDisplayPlugins/NoteDatesPlugin.js" />
+      <file src="NoteDisplayPlugins/NoteActionButtonsPlugin.js" />
+      <file src="NoteDisplayPlugins/NoteEditorPlugin.js" />
+      <file src="NoteDisplayPlugins/NoteTitlePopupPlugin.js" />
+      <file src="NoteDisplayPlugins/NoteTagsDropdownPlugin.js" />
+      <file src="NoteDisplayPlugins/NoteMetaTagListPlugin.js" />
+      <file src="NoteDisplayPlugins/NoteMetaTagLightPlugin.js" />
+      <!--file src="NoteDisplayPlugins/NoteNiftyCornerPlugin.js" />
+      <file src="NoteDisplayPlugins/NoteDragReceiverPlugin.js" /-->
+      <file src="NoteDisplayPlugins/NoteBooleanFlagsPlugin.js" />
+      <file src="NoteDisplayPlugins/NoteSharedDisplayPlugin.js" />
+      <file src="NoteDisplayPlugins/NoteReadWriteStatusPlugin.js" />
+      <file src="NoteDisplayPlugins/NoteSavePlugin.js" />
+      <file src="NoteDisplayPlugins/NoteLinkOpenPlugin.js" />
+      <file src="AttachmentTagMenu.js" />
+      <file src="ShareLevelMenu.js" />
+      <file src="MenuPlugin.js" />
+      <!--file src="DragPlugin.js" />
+      <file src="MetaTagDragPlugin.js" /-->
+      <file src="HoverPlugin.js" />
+      <file src="OfflineWarningDialog.js" />
+      <file src="NotesPagingMenuSortOrder.js" />
+      <file src="NotesPagingMenuViewType.js" />
+      <file src="NotesPagingPluginHistory.js" />
+      <file src="NotesPagingPluginViews.js" />
+      <!--file src="NotesPagingPluginHeader.js" /!-->
+      <file src="NotesPagingPluginPaging.js" />
+      <file src="NotesPagingPluginSortOrder.js" />
+      <file src="NotesPagingPluginNewNote.js" />
+      <file src="NotesPagingPluginLoadingScreen.js" />
+      <file src="NotesPagingPluginSystemCategories.js" />
+      <file src="NotesPagingPluginSingleNoteView.js" />
+      <file src="PopupPlugin.js" />
+      <file src="ButtonPlugin.js" />
+      <file src="OKCloseCancelButtonsPlugin.js" />
+      <file src="MtoNofXCountPlugin.js" />
+      <file src="HeaderFooterPlugin.js" />
+      <file src="ExtraInfoDataPlugin.js" />
+      <file src="KeyListenerPlugin.js" />
+      <file src="ExternalSourceIframe.js" />
+      <file src="AccordionDecorator.js" />
+      <file src="NoteHelper.js" />
+      <file src="AutoCompletePlugin.js" />
+      <file src="CommentMenu.js" />
+      <!--file src="NoteAddCommentPopupDisplay.js" /!-->
+	  <file src="CommentsList.js" />
+	  <file src="BindingDisplayCommentPlugin.js" />
+      <file src="FormatterUserName.js" />
+      <file src="FormatterString.js" />
+      <!--file src="MetaTagPluginTitle.js" /-->
+      <file src="Lightbox.js" />
+      <!-- Put new items above here! -->
+      <file src="MenuFactory.js" />
+    </development>
+    <production>
+    </production>
+  </displays>
+  <models>
+    <development>
+      <file src="Model.js" />
+      <file src="ModelCollection.js" />
+      <file src="MetaTag.js" />
+      <file src="MetaTags.js" />
+      <file src="Attachment.js" />
+      <file src="Category.js" />
+      <file src="Categories.js" />
+      <file src="CategoriesLoader.js" />
+      <!--file src="FoldersLoader.js" /-->
+      <file src="SystemCategories.js" />
+      <file src="Folder.js" />
+      <file src="Folders.js" />
+      <file src="UserPrefs.js" />
+      <file src="Notes.js" />
+      <file src="Note.js" />
+      <!--file src="Comments.js" />
+	<file src="Comment.js" /-->
+	<file src="Contacts.js" />
+	<file src="Shares.js" />
+	<file src="ActivityUpdates.js" />
+    </development>
+    <production>
+    </production>
+  </models>
+  <script>
+    <development>
+      <file src="LocalStrings_en.js" />
+      <file src="../Behaviors/Behaviors.js" />
+      <file src="Ubernote.js" />
+      <file src="Typecheck.js" />
+      <file src="Enum.js" />
+      <file src="ErrorLevels.js" />
+      <file src="Config.js" />
+      <file src="ModalDialog.js" />
+      <file src="Dialogs.js" />
+      <file src="drag.js" />
+      <file src="HashArray.js" />
+      <file src="KeyCode.js" />
+      <file src="Cookies.js" />
+      <file src="util.js" />
+      <file src="DateFormat.js" />
+      <file src="XmlHttpRequests.js" />
+      <file src="TemplateManager.js" />
+      <file src="IDGenerator.js" />
+      <file src="FunctionContainer.js" />
+      <file src="Timeout.js" />
+      <file src="Message.js" />
+      <file src="DomElement.js" />
+      <file src="DomEvents.js" />
+      <file src="UberObject.js" />
+      <file src="ConnectionResponseHandler.js" />
+      <file src="Logger.js" />
+      <file src="Error.js" />
+      <file src="Factory.js" />
+      <file src="HeaderBar.js" />
+      <file src="Application.js" />
+      <file src="FullApplication.js" />
+      <file src="StandaloneEditorApp.js" />
+      <file src="GlobalEventHandler.js" />
+      <file src="Plugin.js" />
+      <file src="BatchPlugin.js" />
+	  <file src="URITransforms.js" />
+	  <file src="ExternalHelpers.js" />
+    </development>
+    <production>
+      <file src="uberscripts.js" />
+    </production>
+  </script>
+  <lib>
+    <development>
+      <file src="prototype-1.7.0.js" />
+      <file src="BrowserInfo.js" />
+      <file src="tiny_mce/tiny_mce_dev.js" />
+      <!--file src="niftycube.js" /-->
+      <!--file src="modernizr.js" /!-->
+    </development>
+    <production>
+      <file src="prototype-1.6.0.2.js" />
+      <file src="BrowserInfo.js" />
+      <file src="tiny_mce/tiny_mce_gzip.js" />
+      <!--file src="niftycube.js" /-->
+      <!--file src="modernizr.js" /-->
+   </production>
+  </lib>
+  <stylesheets>
+    <development>
+      <file src="sprite.css" />
+      <file src="menu.css" />
+      <file src="drag.css" />
+      <file src="ModalDialog.css" />
+      <file src="TopStatus.css" />
+      <file src="../Behaviors/Behaviors.css" />
+      <file src="Popup.css" />
+      <file src="niftyCorners.css" />
+      <file src="accordian.css" />
+      <!-- notepad.css and NoteText.css must be last! It has all the general CSS that overrides everything -->
+      <file src="NoteText.css" />
+      <file src="notepad.css" />
+    </development>
+    <production>
+    </production>    
+  </stylesheets>
+  <templates>
+    <development>
+      <file src="CategorySelectionItem.css" />
+      <file src="EditorCategoriesDropdown.css" />
+      <file src="PopupMessageOK.css" />
+      <file src="MainControl.css" />
+      <file src="EditorTextInputPopup.css" />
+      <file src="NewTagInput.css" />
+      <file src="ViewNode.css" />
+      <file src="NotesMain.css" />
+      <file src="NotePageList.css" />
+      <file src="Note.css" />
+      <file src="View.css" />
+	  <file src="FoldersPane.css" />
+    </development>
+    <production>
+      <file src="uberstyling.css" />
+    </production>
+  </templates>
+  <templatehtml>
+    <file src="notehelper.htm" />
+    <file src="AttachmentTag.htm" />
+    <file src="AttachmentTagExtended.htm" />
+    <file src="BasicContentItem.htm" />
+    <file src="BasicMenuItem.htm"/>
+    <file src="BasicPopup.htm" />
+    <file src="CategorySelectionItem.htm" />
+    <file src="Comment.htm" />
+	<file src="Comments.htm" />
+	<file src="CommentTextInputPopup.htm" />
+    <file src="EditorCategoriesDropdown.htm" />
+    <file src="EditorTextInputPopup.htm" />
+    <file src="EmptyDiv.htm" />
+    <file src="IframePopup.htm" />
+    <file src="MainControl.htm" />
+    <file src="Menu.htm" />
+    <file src="NewTagMenuItem.htm" />
+    <file src="NewTagsList.htm" />
+    <file src="Note.htm" />
+    <file src="NoteListDetails.htm" />
+    <file src="NotePopup.htm" />
+    <file src="NotesMain.htm" />
+    <file src="NotesMainSingleNote.htm" />
+    <file src="NotesMainList.htm" />
+    <file src="NotesPagingBasic.htm" />
+    <file src="PopupMessage.htm" />
+    <file src="SelectedMenuItem.htm" />
+    <file src="ShareTagExtended.htm" />
+    <file src="Tag.htm" />
+    <file src="tags.htm" />
+    <file src="View.htm" />
+    <file src="ViewNode.htm" />
+    <file src="ViewNoInput.htm" />
+  </templatehtml>
+
+</head>

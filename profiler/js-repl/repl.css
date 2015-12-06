@@ -1,0 +1,16 @@
+#console {
+	height: 300;
+	width: 500;
+	border: solid 1px black;
+	font-family: monospace;
+	font-size: 10pt;
+	overflow-y: scroll;
+}
+
+#commandline {
+	width: 500;
+}
+
+.line {
+	vertical-align: bottom;
+}

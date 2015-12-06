@@ -1,0 +1,94 @@
+<html>
+	<head>
+		<title></title>
+
+		<script type="text/javascript">
+			var djConfig = { isDebug: true };
+		</script>
+		
+		<script src="lib/dojo-0.4.3-ajax/dojo.js.uncompressed.js" type="text/javascript" language="JavaScript"></script>
+		<script>
+			dojo.require("dojo.dom");
+			dojo.require("dojo.event.*");
+			dojo.require("dojo.html.*");
+			dojo.require("dojo.lfx.*");
+			dojo.require("dojo.widget.Editor2");
+			dojo.require("dojo.storage.*");
+
+			if( dojo.storage.manager.isInitialized() == false )
+			{
+				// dojo.event.connect( dojo.storage.manager, "loaded", this, loaded );
+			}
+			else
+			{
+				// dojo.event.connect( dojo, "loaded", Moxie, Moxie.initialize );
+				loaded();
+			}
+
+			var noteCache = undefined;
+
+			function loaded()
+			{
+				alert( "Storage is loaded" );
+			}
+			
+			function init()
+			{
+				
+			}
+
+			function saveHandler( status, keyName )
+			{
+				alert( status );
+			}
+
+			function load()
+			{
+				var results = dojo.storage.get( "ubernote" );
+				alert( "done" );
+			}
+			function save()
+			{
+				// noteCache = this.frameElement.document.parentWindow.app.notes.m_objNoteCache;
+				
+					var recursionLimit = 5000;
+					var recursionDepth = 0;
+					var rootObject = new Object();
+					
+				    /*
+				    bigArray = new Array();
+					for( i = 0; i < 2800; ++i )
+					{
+						bigArray[i] = { one: 1 };
+						
+					}
+					alert( bigArray.length );
+					*/
+					
+					addNode( rootObject );
+					
+					function addNode( in_parent )
+					{
+						in_parent.node = new Object();
+						var compositeNode = in_parent.node;
+						
+						++recursionDepth;
+						
+						if( recursionDepth <= recursionLimit )
+						{
+							addNode( compositeNode );
+						}
+					}
+				
+				dojo.storage.put( "ubernote", rootObject, saveHandler );
+			}
+		</script>
+	
+	</head>
+	<body onload="init();">
+		<button onclick="save();">Save</button>
+		<button onclick="load();">Load</button>
+		<button onclick="dojo.storage.showSettingsUI();">Settings</button>
+		<button onclick="dojo.storage.clear();">Clear</button>
+	</body>
+</html>

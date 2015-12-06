@@ -1,0 +1,17 @@
+﻿.categorySelectionImage, .menuSelectedImage
+{
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 12px;
+    height: 12px;
+}
+
+.menuSelectedImage
+{
+    display: none;
+}
+
+.selected .menuSelectedImage
+{
+    display: inline;
+}

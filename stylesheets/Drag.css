@@ -1,0 +1,25 @@
+﻿#dragbarShadow {
+	display: none;
+}
+
+.UberDragElement
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: block;	
+}
+
+span.UberDragElement
+{
+    background-color: #ffffff;
+    padding: 2px;
+    -moz-opacity:0.8; 
+    opacity:0.8; 
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+    border: solid 1px black;
+    -moz-border-radius-topleft: 4px;	
+    -webkit-border-top-left-radius: 4px;    
+    -moz-border-radius-topright: 4px;	
+    -webkit-border-top-right-radius: 4px;    
+}

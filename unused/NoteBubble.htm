@@ -1,0 +1,62 @@
+<div class='notebubble minimize' style='margin: 7px 0px; width: 100%;'>
+    <div class='noteheaderinfo rounded7px' style='width: 120px; float: left; border:1px solid #A8D6E0; padding: 2px;'>
+        <img class='icon elementStar' style='float:left;' src='images/1x1spacer.gif' title='{#_localStrings.IMPORTANT_STATUS}' alt='{#_localStrings.IMPORTANT_STATUS}' />
+        <span class='elementTitle extrainfo' _dataField='Title' style='color:#ae0000; margin-left: 3px;' ></span>
+        <div class='clearer'></div>
+        <div style='color:#a6a6a6'>
+            {#_localStrings.MODIFIED_DATE_HEADER}
+            <span class='elementUpdateDate' _format='FUZZY' ></span>
+            <span class='elementUpdateUserContainer' >
+                /<span class='elementUpdateUser' ></span>/
+            </span>     
+        </div>
+        <div style='color:#a6a6a6'>
+            {#_localStrings.CREATE_DATE_HEADER}
+            <span class='elementCreateDate' _format='DATE' ></span>
+            <span class='elementShareFrom'>
+                /<span class='elementShareOwner'></span>/
+            </span>
+
+        </div>
+        <!--div class='tagsindicator'>
+            <img src='images/play.png' /><div class='tags'></div>
+        </div-->
+    </div>
+    <div class='rounded7px elementActionIcons'>
+        <img title='{#_localStrings.NEW_WINDOW}' alt='{#_localStrings.NEW_WINDOW}' class='icon elementExternal' src='images/1x1spacer.gif' />
+        <span class='elementEmail'><img class='icon' title='{#_localStrings.SHARE}' alt='{#_localStrings.SHARE}' src='images/1x1spacer.gif' /></span>
+        <span class='elementCategories'><img class='icon' title='{#_localStrings.TAG_MENU}' alt='{#_localStrings.TAG_MENU}' src='images/1x1spacer.gif' /></span>
+        <span class='elementActions'><img class='icon' title='{#_localStrings.ACTIONS}' alt='{#_localStrings.ACTIONS}' src='images/1x1spacer.gif' /></span>
+        <span class='elementUntrash'><img title='{#_localStrings.UNTRASH}' alt='{#_localStrings.UNTRASH}' class='icon' src='images/1x1spacer.gif' /></span>
+        <span class='elementDelete'><img title='{#_localStrings.DELETE}' alt='{#_localStrings.DELETE}' class='icon' src='images/1x1spacer.gif' /></span>
+        <span class='elementTrash'><img title='{#_localStrings.TRASH_NOTE}' alt='{#_localStrings.TRASH_NOTE}' class='icon' src='images/1x1spacer.gif' /></span>
+    </div>
+    <div class='rounded7px notemain' >
+            <div class='elementBody' style='position: relative; overflow: auto; width: 100%'></div>
+            <img class='comment_arrow' src='images/1x1spacer.gif' style='position: absolute; left:-32px; top: 29px;'/>
+            <div class='shareInfoButtons'>
+                <img class='elementMaximize icon' src='images/1x1spacer.gif' />
+                <img class='elementSharing12x12 icon12x12' src='images/1x1spacer.gif' />
+                <img class='elementAttachment12x12 icon12x12' src='images/1x1spacer.gif' />
+            </div>
+            <div class='noteshareinfo'>
+                <img class='elementMinimize icon' src='images/1x1spacer.gif' />
+                <div class='elementNoteShareInfo line'>
+                    <img class='elementSharing12x12 icon12x12' src='images/1x1spacer.gif' />
+                    <span class='elementShareWith'>
+                        <span class='bold' >{#_localStrings.SHARED_WITH}</span><span class='elementShareWithHeader'></span>
+                        <span class='elementShareWithNames'></span>
+                    </span>
+                    <span class='elementOthersShareWith'>
+                        <span class='bold' >{#_localStrings.OTHERS_SHARED_WITH}</span><span class='elementOthersShareWithNames'></span>
+                    </span>
+                </div>
+                <div class='elementAttachments line'>
+                    <img class='elementAttachment12x12 icon12x12' src='images/1x1spacer.gif' />
+                    <span class='bold' >{#_localStrings.ATTACHMENTS}</span><span class='elementAttachmentsNames'></span>
+                </div>
+            </div>
+
+    </div>
+    <div class='clearer'></div>
+</div>

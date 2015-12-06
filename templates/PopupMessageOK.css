@@ -1,0 +1,44 @@
+﻿
+.popupMessageContainer
+{
+	margin: 0px auto;
+}
+
+.popupMessage
+{
+	background: white;
+	border: 2px solid #666666;
+	text-align: center;
+	padding: 15px 30px;
+}
+
+.popupMessageContainer img
+{
+    display: none;
+    float: left;
+    margin-right: 8px;
+}
+
+.error .popupMessage
+{
+    background-color: #ffeaea;
+    border-color: #ff6666;
+}
+
+.error img
+{
+    display: inline;
+    background-image: url(../images/error.png);
+}
+
+.ok .popupMessage
+{
+    background-color: #daffda;
+    border-color: #55dd55;
+}
+
+.ok img
+{
+    display: inline;
+    background-image: url(../images/tick.png);
+}

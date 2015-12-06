@@ -1,0 +1,20 @@
+﻿#MainControl 
+{
+    clear: both;
+    margin: 10px 5px 0px 0px;
+	display: none;
+}
+/*
+#MainControlEmptyTrash
+{
+	float: right;
+	margin-right: 15px;
+}
+
+.btnMouseOver #MainControlEmptyTrash
+{   /* This keeps the button from moving when mousing over the trash button *//*
+	margin-right: 14px;
+}
+
+
+*/

@@ -1,0 +1,36 @@
+﻿.mnu {
+	border: solid 1px gray;
+	background-color: #f9f8f7;
+	background-image: url(../images/context-grad.gif);
+	background-repeat: repeat-y;
+	cursor: pointer;
+	cursor: hand;
+	width: 155px;
+}
+
+
+.mnuItem {
+	display: block;
+	font-size: 12px;
+	line-height: 14px; /*centering trick */
+	padding: 1px;
+	padding-left: 25px;
+}
+
+.ie .mnuItem
+{
+    /* Without the 100% width, the input box in the tags dropdown 
+    *   in IE expands to giant sizes, but setting it in FF
+    *   causes it that it won't auto-scroll over.
+    */
+    
+	width: 100%;        
+}
+
+.mnu .highlighted
+{
+    padding: 0px;
+    padding-left: 24px; /* 1px less because we have a 1px border on the left */
+	border: solid 1px black;
+	background-color: #b6bdd2;
+}

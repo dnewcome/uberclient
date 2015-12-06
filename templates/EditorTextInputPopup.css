@@ -1,0 +1,76 @@
+﻿
+.editorTextInputPopup
+{
+	width: 300px;
+}
+
+.gecko2 .caretfix
+{   /* There is a problem with firefox 2 and form elements, the cursor does
+     * not always show.  This is a solution found for the problem, 
+     * wrap the offender in a div, and then set the div to overflow: auto
+     */
+    overflow: auto;
+}
+
+.titlepopup
+{
+    width: 350px;
+}
+
+.commentpopup
+{
+	width: 500px;
+}
+
+.ie .commentpopup, .ie .titlepopup
+{   /* IE, as usual, messes up and does not handle inputs & textareas inside
+        of other elements well, when typing into the textarea it resizes
+        it over and over again to the outside of the container.  So,
+        we have to set a width manually on the textarea. 
+    */
+    width: auto;
+}
+
+.ie .editorTextInputPopup input
+{
+    width: 240px;
+}
+
+.ie .commentpopup textarea
+{
+    width: 470px;
+}
+
+.ie .titlepopup input
+{
+    width: 300px;
+}
+
+
+.arrowbubble
+{
+	padding-left: 31px;
+}
+
+.arrowbubble .contentcontainer
+{
+	/*background: white;*/
+	background: #FFFF88 none repeat scroll 0 0;
+	border: 1px solid #A8D6E0;
+	padding: 5px 15px;
+	-moz-box-shadow: 5px 5px 10px #333;
+	-webkit-box-shadow: 5px 5px 10px #333;
+	box-shadow: 5px 5px 10px #333;
+}
+
+.arrowbubble img.comment_arrow
+{
+    position: absolute; 
+    left:0px; 
+    top:7px;
+}
+
+.editorTextInputPopup .elementHeader
+{
+	font-style: italic;
+}

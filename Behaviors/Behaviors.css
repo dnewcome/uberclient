@@ -1,0 +1,74 @@
+﻿/* widget mouseovers */
+
+.ButtonWidget
+{
+	/* can't use padding with ie */
+    padding: 1px 0px 1px 1px; /*Fix for gap on arrow for the selected category? */
+    cursor: pointer;
+    cursor: hand;
+}
+
+.ButtonWidget:hover, /*.btnMouseOver, */.highlighted {
+    padding: 0px;
+	border: solid 1px gray; 	
+}
+
+.btnMouseDown, .btnMouseDownTrans {
+	position: relative;
+	top: 1px;
+	left: 1px;
+}
+
+/* widget mouseovers */
+
+.ButtonWidgetTrans, .elementAddComment
+{
+    padding: 0px;
+    cursor: pointer;
+    cursor: hand;
+/*	text-decoration: underline;*/
+	color: #000000;
+/*	text-shadow: 0 1px 0 #eee;*/
+	text-decoration: none;
+}
+
+.ButtonWidgetTrans:hover, .showstar .elementStar12x12, .showcheck .checkbox img, 
+.commentbuttonhighlight .elementAddComment 
+{
+	/*background-color: #b6bdd2;*/
+	text-decoration: underline;
+}
+
+
+/**
+* Translations for anchors
+* By default, this translation will not shift 
+*   the icon in case the icon is already positioned.
+* To do the shift action, add the 
+*   ButtonWidgetTransShift class to the element or
+*   override with another class.
+*/
+a.ButtonWidgetTrans:link {}
+a.ButtonWidgetTrans:visited 
+{
+    border: 0;
+}
+a.ButtonWidgetTrans:hover 
+{
+    /*background-color: #b6bdd2;*/
+	text-decoration: underline;
+}
+a.ButtonWidgetTrans:active {}
+
+a.ButtonWidgetTrans img 
+{
+    border:none
+}
+
+a.ButtonWidgetTransShift:active 
+{
+	position: relative;
+	top: 1px;
+	left: 1px;
+}
+
